@@ -6,12 +6,13 @@
 Welcome to Novius OS's documentation!
 =====================================
 
-Contents:
+How-tos
+-------
 
 .. toctree::
-   :maxdepth: 2
-
-
+    :glob:
+    
+    how_to/install
 
 Indices and tables
 ==================
