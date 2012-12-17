@@ -7,6 +7,7 @@ Welcome to Novius OS's documentation!
 =====================================
 
 Contents:
+	Test
 
 .. toctree::
    :maxdepth: 2
