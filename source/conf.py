@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Novius OS documentation build configuration file, created by
-# sphinx-quickstart on Mon Dec 17 16:32:54 2012.
+# sphinx-quickstart on Mon Dec 17 17:38:13 2012.
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #
@@ -64,7 +64,7 @@ release = '0.2'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build']
+exclude_patterns = []
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
