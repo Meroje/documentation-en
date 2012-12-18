@@ -80,6 +80,8 @@ exclude_patterns = []
 # output. They are ignored by default.
 #show_authors = False
 
+highlight_language = 'php'
+
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 

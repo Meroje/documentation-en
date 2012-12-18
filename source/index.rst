@@ -12,7 +12,6 @@ How-tos
 -------
 
 .. toctree::
-    :glob:
     
     how_to/install
     how_to/setup_front
@@ -24,6 +23,20 @@ Understanding Novius OS
 * `Glossary <http://novius-os.github.com/docs/glossary.html>`_, learn Novius OS jargon
     
 
+Technical documentation
+-----------------------
+
+.. toctree::
+	:maxdepth: 0
+	
+    technical/coding_standards
+    
+.. toctree::
+	:maxdepth: 2
+	
+    technical/applications
+    
+    
 Indices and tables
 ==================
 
