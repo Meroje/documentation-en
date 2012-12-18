@@ -26,7 +26,7 @@ Taxonomy (standardised data type which are part of a content nugget)
 * Image
 
 ``Nos\Orm_Behaviour_Sharable`` (creating content nuggets)
--------------------------------------------------------
+---------------------------------------------------------
 
 Shared data are defined using the ``Sharable`` :doc:`Behaviour <behaviours>` on a ``Model``.
 
