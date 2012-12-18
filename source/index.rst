@@ -12,10 +12,12 @@ How-tos
 -------
 
 .. toctree::
-    
-    how_to/install
-    how_to/setup_front
-    
+	:maxdepth: 2
+
+	how_to/install
+	how_to/setup_front
+
+
 Understanding Novius OS
 -----------------------
 
@@ -27,14 +29,21 @@ Technical documentation
 -----------------------
 
 .. toctree::
-	:maxdepth: 0
+	:maxdepth: 1
 	
-    technical/coding_standards
+	technical/coding_standards
     
 .. toctree::
 	:maxdepth: 2
 	
-    technical/applications
+	technical/applications
+	technical/appdesk
+	technical/behaviours
+	technical/crud_controller
+	technical/enhancers
+	technical/javascript_api
+	technical/javascript_actions
+	technical/sharing
     
     
 Indices and tables
