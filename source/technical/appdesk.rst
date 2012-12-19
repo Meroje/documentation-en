@@ -1,3 +1,5 @@
+.. _appdesk_header:
+
 App Desk
 ========
 
@@ -279,7 +281,7 @@ The main grid configuration is defined through several keys:
 
 	* ``name``: name of the view
 	* ``json``: json sources
-	
+
 * ``selectedView``: view by default
 
 	.. code-block:: php
@@ -319,7 +321,7 @@ The main grid configuration is defined through several keys:
 
 		* the ``value`` key is a callback function which allows you to customize the value (for example take a look at ``species`` key which return the name of the monkey species)
 		* if key is ``actions``, then the keys define whether or not the action are enabled (for example, the callback of ``visualise`` return true if the ``visualise`` action is enabled, false otherwise)
-		
+
 * ``inputs``: is a key => value array allowing to apply filtering on the list (requested by the inspectors)
 
 	.. code-block:: php
@@ -337,7 +339,7 @@ The main grid configuration is defined through several keys:
 
 	* the key is the input name
 	* the value is a callback function with two parameters
-	
+
 		* the first parameter is the value of the input
 		* the second parameter is the query : the callback function have to modify the query object in order to apply the filtering requested
 
@@ -378,17 +380,17 @@ The ``appdesk`` key defines a key => value array:
 
 	* the key is the action name
 	* value, key => value array:
-	
+
 		* ``action``: define the action executed when the action button is clicked. The parameters inside are the same as in [[JavaScript actions | (EN) JavaScript actions]]
 		* ``label``
 		* ``primary``:
-		
+
 			* if set to true, the button will always be shown as standalone
 			* if set to false, if there is more than two secondary button, the action will appear inside the drop down button ; otherwise it will also appear as a standalone button
-			
+
 		* ``iconClasses``: set the css classes of the button's icon
 		* ``icon``: shorcut for iconClasses. Will set the css class of the button's icon to the jquery ui css class (for example, if the value is ``pencil``, then the css classes will be ``ui-icon ui-icon-pencil``)
-	
+
 * ``reloadEvent``: the appdesk listens to the associated event (events if the value is an array). Take a look at events in the :doc:`javascript_api`
 
 	.. code-block:: php
@@ -399,7 +401,7 @@ The ``appdesk`` key defines a key => value array:
 * ``appdesk``: display of the appdesk, key => value array:
 
 	* ``buttons``: upper buttons that are generally intended to add objects. It is a key => value array
-	
+
 		.. code-block:: php
 
 			<?php
@@ -420,19 +422,19 @@ The ``appdesk`` key defines a key => value array:
 
 		* the key is the name of the action
 		* the value is a key => value array:
-		
+
 			* ``label``
 			* ``action``: define the action executed when the button is clicked. The parameters inside are the same as in [[JavaScript actions | (EN) JavaScript actions]]
-		
+
 	* ``splittersVertical``: position of the vertical splitter (distance from the left border in pixel)
-	
+
 		.. code-block:: php
 
 			<?php
 				'splittersVertical' => 250,
 
 	* ``grid``: display of the main grid
-	
+
 		.. code-block:: php
 
 			<?php
@@ -455,17 +457,17 @@ The ``appdesk`` key defines a key => value array:
 
 	* ``urlJson``: url called to load via ajax the json data
 	* ``columns``: key => value array which defines how the columns are displayed
-	
+
 		* ``headerText``: head title of the column
 		* ``dataKey``: key of an item of the data received
 		* ``lang``: languages of the item if it has the translatable behaviour
 		* ``actions``: actions buttons, for each element of the array:
-		
+
 			* if it is a string, then it comes from the key related predefined action
 			* it it is an array, it is a custom action which is defined the same way as the predefined actions
-			
+
 	* ``inspectors``: key => value array which define the inspectors
-	
+
 		.. code-block:: php
 
 			<?php
@@ -496,12 +498,12 @@ The ``appdesk`` key defines a key => value array:
 		* ``inputName``: filter name affected by the inspector
 		* ``vertical``: if true, the inspector will be on the left, otherwise if will be on the top
 		* ``grid``: same as the main grid except it is for the inspectors
-    
+
 .. _appdesk_inspectors-configuration:
 
 Inspectors configuration
 ------------------------
-  
+
 .. _appdesk_inspectors-configuration-model:
 
 Model inspector
@@ -528,8 +530,8 @@ The configuration has two keys :
 * ``query``: which defines the query executed for retrieving the data:
 
 	* ``model`` is the model's class
-	* all other columns are used for the query  
-	
+	* all other columns are used for the query
+
 * ``dataset``: key => value hash returned via ajax, same as in the appdesk configuration
 
 .. _appdesk_inspectors-configuration-tree:
@@ -570,7 +572,7 @@ Example of configuration:
 	* ``childs``: children's classes
 	* ``dataset``: same as in the appdesk configuration
 	* other columns can be applied to the query object
-	
+
 * ``roots``: how to load the root nodes of the tree
 
 	* ``model``: model's class
@@ -585,7 +587,7 @@ Date inspector
 
 	<?php
 	return array(
-		
+
 		'input_begin'           => 'date_begin',
 		'input_end'             => 'date_end',
 		'label_custom'          => 'Custom dates',
