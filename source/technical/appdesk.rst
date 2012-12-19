@@ -1,5 +1,3 @@
-.. _appdesk_header:
-
 App Desk
 ========
 
