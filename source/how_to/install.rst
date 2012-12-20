@@ -9,7 +9,7 @@ This guide provides instructions to run on Ubuntu. Be sure to adapt the commands
 
 	* :ref:`install_download-github`
 	* :ref:`install_download-zip`
-	
+
 * :ref:`install_server-configuration`
 
 	* :ref:`install_server-dedicated`
@@ -53,7 +53,7 @@ This will download a sample repository, with several submodules:
 Step A-3 (optional): change the version you want to use (if you're gutsy)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-We configured the cloning of the repository to point to the latest available release (it's **master/0.1.4*** at the time I'm writing this).
+We configured the cloning of the repository to point to the latest available release (it's **master/0.1.5*** at the time I'm writing this).
 
 | When we deploy a version, we create a new branch for it.
 | For now, we keep synchronised all the dependant repositories. Hence, an application provided on our Github will follow the same version number as the core. So if you're using novius-os/core version 0.3 (not yet released!), you need to use novius-os/app in the same version 0.3 too.
@@ -75,11 +75,11 @@ Method B: from a .zip file
 ::
 
     cd ~
-    wget http://nova.li/nos-014 -O novius-os.0.1.4.zip
-    unzip novius-os.0.1.4.zip
+    wget http://nova.li/nos-015 -O novius-os.0.1.5.zip
+    unzip novius-os.0.1.5.zip
     sudo mv novius-os /var/www/
 
-Or download the file `nos-014 <http://nova.li/nos-014>`_ and unzip it with your favourite program.
+Or download the file `nos-015 <http://nova.li/nos-015>`_ and unzip it with your favourite program.
 
 .. _install_server-configuration:
 
