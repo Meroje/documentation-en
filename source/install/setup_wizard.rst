@@ -1,34 +1,27 @@
-Assistant de paramétrage
-========================
+Setup wizard
+============
 
-Les :doc:`fichiers de Novius OS sont installés, le serveur paramétré <install>`, le plus dur est passé, on commence la partie simple :-)
+You've followed the :doc:`first part of the installation process <install>`. Novius OS files are therefore installed, the server is set-up and you access to http://votredomaine/novius-os/. You've done the hardest, now comes the easy part :-).
 
-Dans votre navigateur préféré, appelez la page install.php de votre Novius OS et laissez vous guider par l'assistant :
+Step 1: Checking requirements
+--------------------------
 
-* http://localhost/nom_du_site si vous avez suivi la procédure d'installation locale
-* http://www.votredomaine.com/install.php pour une installation classique sur un serveur externe
-* http://www.votrehébergement.com/rep-novius-os/install.php pour une installation dans un sous-répertoire d'un hébergement mutualisé
-
-
-Étape 1 : vérification des pré-requis
--------------------------------------
-
-Cette étape peut-être une simple formalité si vous avez installé Novius OS avec la procédure d'installation locale. Dans les autres cas, si vous voyez beaucoup de rouge, ne vous inquiétez pas ! Le site a juste besoin de droits en écriture dans certains répertoires. Cette étape vous donne des explications et les commandes à exécuter pour corriger tous les points.
+This step should be straightforward if you've installed Novius OS following the quick procedure. In other cases, don't worry if a lof of red comes up! Your website just needs writing permissions in some directories. For each directory, you're given explanations and the command to run to fix the problem.
 
 .. image:: images//step-1a.png
-	:alt: Étape 1a
+	:alt: Step 1a
 	:align: center
 
-Si vous ne voulez pas vous embêter, copiez / collez le résumé des commandes disponibles en bas de la page dans un terminal : c'est fini !
+To fast-track this step, just copy the commands' summary given at the bottom of the page and copy them in a terminal. You're done!
 
 .. image:: images//step-1b.png
-	:alt: Étape 1b
+	:alt: Step 1b
 	:align: center
 
-Étape 2 : configurer la base de données MySQL
----------------------------------------------
+Step 2: Setting up the MySQL database
+---------------------------------------
 
-Prérequis à cette étape, avoir créé une base dans MySQL avec un utilisateur associé ayant les droits dessus. Dans le cas d'un hébergement mutualisé, ces paramètres ont dû vous être fournis par votre hébergeur. Dans les autres cas, voici un exemple pour une base en ``localhost``.
+You need a MySQL database including a user with the required rights. For shared hosting, your provider must have given you these details. In other cases, here is an example for a ``localhost`` database:
 
 .. code-block:: sql
 
@@ -36,27 +29,27 @@ Prérequis à cette étape, avoir créé une base dans MySQL avec un utilisateur
     GRANT ALL PRIVILEGES ON `nom_de_votre_base`.* TO 'nom_de_votre_utilisateur'@localhost IDENTIFIED BY 'mot_de_passe';
     FLUSH PRIVILEGES;
 
-Remplissez simplement les 4 champs en fonction de votre configuration. Prenez note que la base de données doit exister, et que vous aurez peut-être besoin de la créer avant de continuer.
+Fill in these four fields according to your database configuration.
 
 .. image:: images/step-2.png
 	:alt: Étape 2
 	:align: center
 
-Ceci va créer les 2 fichiers *local/config/db.php* et *local/config/crypt.php* et surtout créer les tables nécessaires dans votre base de données.
+This will create two files *local/config/db.php* and *local/config/crypt.php* and—more importantly-the tables needed for Novius OS to run.
 
-Étape 3 : créer le premier compte administrateur
-------------------------------------------------
+Step 3: Creating the first administrator account
+--------------------------------------------------
 
 .. image:: images//step-3.png
-	:alt: Étape 3
+	:alt: Step 3
 	:align: center
 
 
-Étape 4: terminer l'installation
---------------------------------
+Step 4: Finishing the installation
+----------------------------------
 
 .. image:: images//step-4.png
-	:alt: Étape 4
+	:alt: Step 4
 	:align: center
 
 
@@ -64,22 +57,22 @@ Ceci va créer les 2 fichiers *local/config/db.php* et *local/config/crypt.php* 
 Applications
 ------------
 
-Vous devriez arriver sur le gestionnaire d'applications. C'est ici que vous pouvez installer les applications que vous souhaitez utiliser.
+You're redirected to the applications manager. Install the applications you need.
 
 .. image:: images//step-appmanager.png
 	:alt: Applications manager
 	:align: center
 
-Se déconnecter / connecter
-------------------------
+Signing in and out
+------------------
 
-Pour vous déconnecter de l'interface d'administration, cliquez en haut à droit sur votre prénom. Un menu apparait alors,
+To sign out, click your name in the top-right corner. A menu shows:
 
 .. image:: images//step-login-a.png
 	:alt: Se déconnecter
 	:align: center
 
-Vous être alors redirigé sur le formulaire de connexion.
+You're redirected to the sign-in form.
 
 .. image:: images//step-login-b.png
 	:alt: Se connecter
