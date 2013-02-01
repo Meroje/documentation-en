@@ -5,4 +5,4 @@ Install Novius OS
 
 	install
 	setup_wizard
-	setup_front
+	whats_next/index
