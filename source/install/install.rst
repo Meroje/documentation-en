@@ -57,7 +57,7 @@ Once the installation complete:
 Installation via Zip file
 *************************
 
-We recommend you follow this procedure when installing Novius OS on shared hosting:
+We recommend you follow this procedure when installing Novius OS on shared hosting
 
 * Download  `novius-os.0.2.zip <http://nova.li/nos-02>`_.
 * Unzip the file.
