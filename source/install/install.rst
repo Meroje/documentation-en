@@ -42,7 +42,7 @@ Open a terminal and enter:
 .. code-block:: bash
 
     cd /var/www
-    sudo wget https://raw.github.com/novius-os/ci/master/0.2/tools/install.sh && sh install.sh
+    sudo wget http://raw.github.com/novius-os/ci/master/0.2/tools/install.sh && sh install.sh
 
 Once the installation complete:
 
