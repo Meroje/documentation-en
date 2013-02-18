@@ -7,9 +7,9 @@ All contributions are welcome: Reporting or fixing errors, submitting improvemen
 
 Sources are on `Git Hub <https://github.com/novius-os/documentation-en>`_, we look forward to your ``Pull Request``. `Contact us <http://www.novius-os.org/en/more-info/contacts.html>`_ if you need help with your contribution.
 
-* `API documentation <http://docs-api.novius-os.org/>`_
-* `Version française <http://docs-fr.novius-os.org/>`_
-* `Japanese version 日本語 <http://docs-ja.novius-os.org/>`_
+* `API documentation <http://docs-api.novius-os.org/>`__
+* `Version française <http://docs-fr.novius-os.org/>`__
+* `Japanese version 日本語 <http://docs-ja.novius-os.org/>`__
 
  .. todolist::
 
