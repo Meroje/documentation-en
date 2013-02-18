@@ -11,9 +11,9 @@ Copy style guide
 
 We take copywriting and translation very seriously. We have therefore established guidelines common to all applications and languages in order to provide every Novius OS user with consistent and enjoyable copy.
 
-* Copy style guide (English)
-* Charte rédactionnelle (Français)
-* スタイルガイド（日本語）
+* :doc:`copy_style_guide`
+* :ref:`fr:contribute/copy_style_guide`
+* :ref:`ja:contribute/copy_style_guide`
 
 The copy style guide is to be read by every translator. If it's not available in your language then it is the first document to translate.
 

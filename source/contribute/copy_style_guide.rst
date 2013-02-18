@@ -12,7 +12,7 @@ About translation
 =================
 
 Translation is more than just a word-to-word job. One must remain faithful to the original design while adapting it for a new audience, for a different culture. A literal translation of Novius OS copy does not make sense. The translation must read as if the copy had originally been written in the target language.
-The first document to translate are these guidelines so that a localised style guide is available.
+The first document to translate are these guidelines so that a **localised style guide** is available.
 
 Personality and tone
 ********************
