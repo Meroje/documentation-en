@@ -44,32 +44,27 @@ For quotation marks, we follow `the rule given by Oxford Dictionnaries <http://o
 Copy examples
 *************
 
-Actions
-=======
+:Actions:
 
-:Sign in: Let’s get started!
-:Log out: Sign out (see you!)
-:Add new item: Add a new page [1]_
-:Save an item: Save [1]_
+    :Sign in: Let’s get started!
+    :Log out: Sign out (see you!)
+    :Add new item: Add a new page [1]_
+    :Save an item: Save [1]_
+
+:Success:
+
+    :New item added: All done! The blog post has been added. [2]_
+    :Item updated: OK, changes are saved. [2]_
+
+:Errors:
+
+    :User mistake: You must add a title for the product to be saved. Sorry about that! [3]_
+    :System error: Something went wrong. Please try again and contact your developer or Novius OS if the problem persists. We apologise for the inconvenience caused. [4]_
+    :Error prevention (warning): Answers to this form have already been received. Modifying the form may alter the collected data. [5]_
+    :Error prevention (confirm button):	Don’t worry, I know what I'm doing. [5]_
 
 .. [1] No need to say more. We want clearly labelled primary actions.
-
-Success
-=======
-
-:New item added: All done! The blog post has been added. [2]_
-:Item updated: OK, changes are saved. [2]_
-
 .. [2] A little diversity is welcome as long as the style is consistent. E.g. ‘There you go!’, ‘All wrapped up!’ or ‘Great!’ to start a success message.
-
-Errors
-======
-
-:User mistake: You must add a title for the product to be saved. Sorry about that! [3]_
-:System error: Something went wrong. Please try again and contact your developer or Novius OS if the problem persists. We apologise for the inconvenience caused. [4]_
-:Error prevention (warning): Answers to this form have already been received. Modifying the form may alter the collected data. [5]_
-:Error prevention (confirm button):	Don’t worry, I know what I'm doing. [5]_
-
 .. [3] Don’t assume this is the user’s fault. Maybe it wasn’t very clear the field was mandatory.
 .. [4] Don’t ’Oops!’ the user. She/he might have lost time or data.
 .. [5] When you need the user to pay attention, get her/him involved by turning the copy into a conversation.
