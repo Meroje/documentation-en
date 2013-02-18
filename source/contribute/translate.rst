@@ -3,7 +3,7 @@ Translate Novius OS
 
 Novius OS is ready to be translated into any language (It has already been translated into French). Here is the process to translate Novius OS into your language.
 
-Remember `we are here to help <http://www.novius-os.org/en/more-info/contacts.html>`__. Your contribution is very appreciated, thank you.
+Remember `we are here to help <http://forums.novius-os.org/en/want-translate-novius,15.html>`__. Your contribution is very appreciated, thank you.
 
 
 Copy style guide
@@ -18,7 +18,7 @@ We take copywriting and translation very seriously. We have therefore establishe
 The copy style guide is to be read by every translator. If it's not available in your language then it is the first document to translate.
 
 .. note::
-    We're happy to have the style guide translated by a professionnal translator. This key document may indeed prove hard to localise. `Contact us <http://www.novius-os.org/en/more-info/contacts.html>`__ about this translation.
+    We're happy to have the style guide translated by a professionnal translator. This key document may indeed prove hard to localise. `Contact us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__ about this translation.
 
 
 Translation server
@@ -33,12 +33,12 @@ Available languages
 	:alt: Available languages
 	:align: center
 
-If on :file:`translate.novius-os.org` home page, your language is not listed under :guilabel:`Languages`, just `contact us <http://www.novius-os.org/en/more-info/contacts.html>`__. We'll add it for you.
+If on :file:`translate.novius-os.org` home page, your language is not listed under :guilabel:`Languages`, just `contact us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__. We'll add it for you.
 
 Translation files
 =================
 
-Once your language is available on :file:`translate.novius-os.org`, click it. Then click the version of Novius OS you want to translate. If you don't know which one to choose, `ask us <http://www.novius-os.org/en/more-info/contacts.html>`__, we'll tell you.
+Once your language is available on :file:`translate.novius-os.org`, click it. Then click the version of Novius OS you want to translate. If you don't know which one to choose, `ask us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__, we'll tell you.
 
 You now see a list of directories. The directories starting with :file:`noviusos_` are applications. :file:`framework` contains the strings from the core.
 
@@ -60,7 +60,7 @@ Everybody can suggest translations. A suggestion will be reviewed by an approved
 .. note::
     You don't even need to create an account to suggest translations. Nevertheless creating an account only takes you a minute and allows you to select your languages and avoid the CAPTCHA protection.
 
-Being an approved translators is a great way to make a difference to the Novius OS project. Everyone can apply: Just `drop us <http://www.novius-os.org/en/more-info/contacts.html>`__ a few lines about yourself and include your Pootle username. We'll review your application before granting you extended permissions.
+Being an approved translators is a great way to make a difference to the Novius OS project. Everyone can apply: Just `drop us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__ a few lines about yourself and include your Pootle username. We'll review your application before granting you extended permissions.
 
 
 When translating
@@ -76,7 +76,7 @@ Placeholders and tags
 Dispelling doubts
 =================
 
-Don't translate in the dark! When you don't understand a string, need to know the context or have any doubt, please `contact us <http://www.novius-os.org/en/more-info/contacts.html>`__. Our job is to make translation easy. We're happy to add notes to translator in the translation files for others to benefit from your feedback. We can also provide you with screenshots or indications to find a string in the UI of Novius OS.
+Don't translate in the dark! When you don't understand a string, need to know the context or have any doubt, please `contact us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__. Our job is to make translation easy. We're happy to add notes to translator in the translation files for others to benefit from your feedback. We can also provide you with screenshots or indications to find a string in the UI of Novius OS.
 
 
 Translating the documentation
@@ -84,7 +84,7 @@ Translating the documentation
 
 This documentation is powered by `Read The Docs <http://readthedocs.org/>`__ which uses Rich Structured Text (RST) files. This format is human-readable and therefore easier to translate.
 
-If on this `page <http://www.novius-os.org/developpers/Documentation.html>`__, your language is not listed under :guilabel:`Translations`, `contact us <http://www.novius-os.org/en/more-info/contacts.html>`__. We'll set up the GitHub repo for you.
+If on this `page <http://www.novius-os.org/developpers/Documentation.html>`__, your language is not listed under :guilabel:`Translations`, `contact us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__. We'll set up the GitHub repo for you.
 
 Once the repo is ready, clone it. You may also want to clone the `English repo <http://github.com/novius-os/documentation-en/>`__ so you can copy files from the original version to the translation.
 
