@@ -44,20 +44,17 @@ For quotation marks, we follow `the rule given by Oxford Dictionnaries <http://o
 Copy examples
 *************
 
-:Actions:
-
+Actions:
     :Sign in: Let’s get started!
     :Log out: Sign out (see you!)
     :Add new item: Add a new page [1]_
     :Save an item: Save [1]_
 
-:Success:
-
+Success:
     :New item added: All done! The blog post has been added. [2]_
     :Item updated: OK, changes are saved. [2]_
 
-:Errors:
-
+Errors:
     :User mistake: You must add a title for the product to be saved. Sorry about that! [3]_
     :System error: Something went wrong. Please try again and contact your developer or Novius OS if the problem persists. We apologise for the inconvenience caused. [4]_
     :Error prevention (warning): Answers to this form have already been received. Modifying the form may alter the collected data. [5]_
