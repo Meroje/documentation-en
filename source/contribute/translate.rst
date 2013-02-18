@@ -40,13 +40,14 @@ Translation files
 
 Once your language is available on :file:`translate.novius-os.org`, click it. Then click the version of Novius OS you want to translate. If you don't know which one to choose, `ask us <http://www.novius-os.org/en/more-info/contacts.html>`__, we'll tell you.
 
-You now see a list of directories. The directories starting with :file:`noviusos_` are applications. :file:`framework` contains the string from the core.
+You now see a list of directories. The directories starting with :file:`noviusos_` are applications. :file:`framework` contains the strings from the core.
 
 .. image:: images/pootle-nos-directories.png
 	:alt: Translation directories
 	:align: center
 
-To start translating, click the :guilabel:`xx words need attention` next to a directory. Please follow these priorities:
+To start translating, click a directory and then :guilabel:`Continue translation`. When choosing a directory, please follow these priorities:
+
 * Top priority, the core: :file:`framework`.
 * Then the native applications: Webpages (:file:`noviusos_pages`), Media Centre (:file:`noviusos_media`), Users (:file:`noviusos_user`) and Applications manager (:file:`noviusos_appmanager`).
 * And finally the non-native applications.
@@ -54,7 +55,7 @@ To start translating, click the :guilabel:`xx words need attention` next to a di
 Suggesting and submitting translations
 ======================================
 
-Everybody can suggest translations. A suggestion will be reviewed by approved translators before being submitted. Only submitted translations are applied to Novius OS. Unreviewed or rejected suggestions stay in Pootle.
+Everybody can suggest translations. A suggestion will be reviewed by an approved translator before being submitted. Only submitted translations are applied to Novius OS. Unreviewed or rejected suggestions stay in Pootle.
 
 .. note::
     You don't even need to create an account to suggest translations. Nevertheless creating an account only takes you a minute and allows you to select your languages and avoid the CAPTCHA protection.
@@ -68,14 +69,14 @@ When translating
 Placeholders and tags
 =====================
 
-* Some strings include variables, e.g. ‘Welcome back, {{user}}’. Obviously, Novius OS end users don't see these variables which are replaced by the actual value, e.g. ‘Welcome back, Joe’. Variables are to be kept, untranslated, e.g.  ‘Re-bonjour {{user}}’.
-* HTML tags are also to be kept and not to be translated. In most cases, you'll find a start tag and an end tag, e.g. ‘This page has <strong>one sub-page</strong>’. Text between tags must be translated, e.g. ‘Cette page a <strong>une sous-page</strong>’.
+* Some strings include variables, e.g. ``‘Welcome back, {{user}}’``. Obviously, Novius OS end users don't see these variables which are replaced by the actual value, e.g. ``‘Welcome back, Joe’``. Variables are to be kept, untranslated, e.g. ``‘Re-bonjour {{user}}’``.
+* HTML tags are also to be kept and not to be translated. In most cases, you'll find a start tag and an end tag, e.g. ``‘This page has <strong>one sub-page</strong>’``. Text between tags must be translated, e.g. ``‘Cette page a <strong>une sous-page</strong>’``.
 * For non-breaking spaces, please use the HTML entity, i.e. ``&nbsp;``.
 
 Dispelling doubts
 =================
 
-Don't translate in the dark! When you don't understand a string, need to know the context or have any doubt, please `contact us <http://www.novius-os.org/en/more-info/contacts.html>`__. Our job is to make translation easy. We're happy to add notes to translator in the translation files so that others will benefit from your feedback. We can also provide you with screenshots or indications to find a string in the UI of Novius OS.
+Don't translate in the dark! When you don't understand a string, need to know the context or have any doubt, please `contact us <http://www.novius-os.org/en/more-info/contacts.html>`__. Our job is to make translation easy. We're happy to add notes to translator in the translation files for others to benefit from your feedback. We can also provide you with screenshots or indications to find a string in the UI of Novius OS.
 
 
 Translating the documentation
@@ -85,4 +86,6 @@ This documentation is powered by `Read The Docs <http://readthedocs.org/>`__ whi
 
 If on this `page <http://www.novius-os.org/developpers/Documentation.html>`__, your language is not listed under :guilabel:`Translations`, `contact us <http://www.novius-os.org/en/more-info/contacts.html>`__. We'll set up the GitHub repo for you.
 
-Once the repo is ready, clone it. You may also want to clone the `English repo <http://github.com/novius-os/documentation-en/>`__ so you can copy files from the original version to the translation. That's it, you're all set to start translating. Thank you very much for your contribution!
+Once the repo is ready, clone it. You may also want to clone the `English repo <http://github.com/novius-os/documentation-en/>`__ so you can copy files from the original version to the translation.
+
+That's it, you're all set to start translating. Thank you very much for your contribution!
