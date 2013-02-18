@@ -12,6 +12,11 @@
 # serve to show the default.
 
 import sys, os
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+if on_rtd:
+	tags.add('rtd')
+else:
+	tags.add('not_rtd')
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
