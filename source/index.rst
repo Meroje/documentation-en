@@ -20,4 +20,5 @@ Summary
 	:maxdepth: 2
 
 	install/index
+	release/index
 	contribute/index
