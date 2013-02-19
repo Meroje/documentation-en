@@ -12,6 +12,11 @@
 # serve to show the default.
 
 import sys, os
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+if on_rtd:
+	tags.add('rtd')
+else:
+	tags.add('not_rtd')
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -242,3 +247,19 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+if on_rtd:
+	intersphinx_mapping = {
+	'api': ('http://docs-api.novius-os.org/en/latest/', None),
+	'fr': ('http://docs-fr.novius-os.org/en/latest/', None),
+	'ja': ('http://docs-ja.novius-os.org/en/latest/', None),
+	  }
+	todo_include_todos = False
+else:
+	intersphinx_mapping = {
+	'api': ('http://novius-os-docs-api/', None),
+	'fr': ('http://docs-fr.novius-os.org/en/latest/', None),
+	'ja': ('http://docs-ja.novius-os.org/en/latest/', None),
+	  }
+	todo_include_todos = True
+	intersphinx_cache_limit = -1
