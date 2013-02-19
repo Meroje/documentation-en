@@ -33,8 +33,6 @@ There are many advantages to tab navigations. We'll emphasise:
 **pop-ups** must be limited to modal use, i.e, when an action must absolutely be accomplished (or canceled) before
 carrying out the work (such as confirming a suppression, adding a link or an image to a WYSIWYG content).
 
-.. _understand/ergnonomie/app_desk:
-
 
 The App Desk
 ------------
