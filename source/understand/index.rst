@@ -6,4 +6,4 @@ Understanding Novius OS
 	fundamentals_software
 	organization_directories
 	differences_fuelphp
-	ergonomie
+	ergonomy

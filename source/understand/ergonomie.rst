@@ -9,7 +9,7 @@ tab navigation and App desk.
 Tabs navigation
 ---------------
 
-`See the screecast related to tabs navigation <http://youtu.be/0fbSDqVI6zc>`__
+`See the screencast related to tabs navigation <http://youtu.be/0fbSDqVI6zc>`__
 
 Tabs navigation organise the work of the end-user. The purpose is to increase productivity, by limiting repetitive
 tasks and pages loading.
@@ -39,7 +39,7 @@ carrying out the work (such as confirming a suppression, adding a link or an ima
 The App Desk
 ------------
 
-`See the screecast related to the App Desk <http://youtu.be/JskI5qWEsHw>`__
+`See the screencast related to the App Desk <http://youtu.be/JskI5qWEsHw>`__
 
 The App Desk is the home page of an application, it allows to browse and access the items. It's made of the following
 elements:
