@@ -7,3 +7,6 @@ Understanding Novius OS
 	organization_directories
 	differences_fuelphp
 	ergonomy
+	applications
+	multi_context/index
+	media_centre
