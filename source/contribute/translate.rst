@@ -78,6 +78,12 @@ Dispelling doubts
 
 Don't translate in the dark! When you don't understand a string, need to know the context or have any doubt, please `contact us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__. Our job is to make translation easy. We're happy to add notes to translator in the translation files for others to benefit from your feedback. We can also provide you with screenshots or indications to find a string in the UI of Novius OS.
 
+When you have a question about a specific string, please give us the link to the string. You'll find it the bottom right corner:
+
+.. image:: images/pootle-nos-string-url.png
+	:alt: String URL
+	:align: center
+
 
 Translating the documentation
 *****************************
