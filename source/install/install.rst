@@ -12,7 +12,7 @@ General requirements
 
 			sudo apt-get install apache2 php5 mysql-server libapache2-mod-php5 php5-mysql
 
-* **mod_rewrite d’Apache** is enabled.
+* **Apache mod_rewrite** is enabled.
 	.. code-block:: bash
 
 			sudo a2enmod rewrite
@@ -44,7 +44,7 @@ Open a terminal and enter:
     cd /var/www
     sudo wget https://raw.github.com/novius-os/ci/master/0.2/tools/install.sh && sh install.sh
 
-Once the installation complete:
+Once the installation completes:
 
 * Open your browser at http://your.domain/novius-os/ (replace :file:`novius-os` with the directory name you've chosen).
 * Follow the steps of the :doc:`setup wizard <setup_wizard>`.
@@ -113,7 +113,8 @@ Then, reload :program:`Apache` to apply the new configuration.
 Configure the :file:`hosts` file, when installing on your computer
 ------------------------------------------------------------------
 
-If you install Novius OS on your local computer, you must add a line in the :file:`/etc/hosts` file, containing the value you entered for ``ServerName`` (:file:`novius-os` in the above example).
+If you install Novius OS on your local computer, you must add a line in the :file:`/etc/hosts` file, containing the
+value you entered for ``ServerName`` (:file:`novius-os` in the above example).
 
 .. code-block:: bash
 
@@ -142,9 +143,9 @@ This command downloads the main repository, and its submodules :
 | The repository default branch is latest stable version of Novius OS.
 | New versions will be made available in new branches.
 
-| For now, every dependent repository of ``novius-os/novius-os`` share the exact same version number.
-  It means that any application available on our Github exists in the same versions as the core.
-  So if you're using the |version| version of ``novius-os/core, then you should also use ``novius-os/app`` in the same |version| version number.
+| For now, every dependent repository of ``novius-os/novius-os`` share the exact same version number. It means that
+  any application available on our Github exists in the same versions as the core. So if you're using the |version|
+  version of ``novius-os/core, then you should also use ``novius-os/app`` in the same |version| version number.
 
 | After the initial ``clone``, if you want to change the Novius OS version you're using, don't forget to update the submodules!
 | Here's how to use the latest *nightly* (it's in the ``dev`` branch):

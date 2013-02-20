@@ -11,7 +11,6 @@ Sources are on `Git Hub <https://github.com/novius-os/documentation-en>`__, we l
 * `Version française <http://docs-fr.novius-os.org/>`__
 * `Japanese version 日本語 <http://docs-ja.novius-os.org/>`__
 
- .. todolist::
 
 Summary
 =======
@@ -20,4 +19,8 @@ Summary
 	:maxdepth: 2
 
 	install/index
+	understand/index
+	release/index
 	contribute/index
+
+.. todolist::
