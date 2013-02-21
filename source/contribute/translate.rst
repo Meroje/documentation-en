@@ -46,7 +46,7 @@ You now see a list of directories. The directories starting with :file:`noviusos
 	:alt: Translation directories
 	:align: center
 
-To start translating, click a directory and then :guilabel:`Continue translation`. When choosing a directory, please follow these priorities:
+To start translating, don't click :guilabel:`Continue translation` but a number in the :guilabel:`Need translation` column. This allows you to choose a directory. Please follow these priorities:
 
 * Top priority, the core: :file:`framework`.
 * Then the native applications: Webpages (:file:`noviusos_pages`), Media Centre (:file:`noviusos_media`), Users (:file:`noviusos_user`) and Applications manager (:file:`noviusos_appmanager`).
@@ -78,7 +78,7 @@ Dispelling doubts
 
 Don't translate in the dark! When you don't understand a string, need to know the context or have any doubt, please `contact us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__. Our job is to make translation easy. We're happy to add notes to translator in the translation files for others to benefit from your feedback. We can also provide you with screenshots or indications to find a string in the UI of Novius OS.
 
-When you have a question about a specific string, please give us the link to the string. You'll find it the bottom right corner:
+When your question or comment regards a specific string, please give us the link to the string. You'll find it the bottom right corner:
 
 .. image:: images/pootle-nos-string-url.png
 	:alt: String URL
