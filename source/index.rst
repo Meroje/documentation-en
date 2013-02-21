@@ -20,6 +20,7 @@ Summary
 
 	install/index
 	understand/index
+	app_extend/index
 	release/index
 	contribute/index
 
