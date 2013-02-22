@@ -43,7 +43,7 @@ Redirecting depending on the URL
 ********************************
 
 
-It's possible to create an :guilabel:``External  link` page from the back-office to make a 301-redirect.
+It's possible to create an :guilabel:`External  link` page from the back-office to make a 301-redirect.
 
 It's also possible to configure 301-redirects using the :file:`./htaccess` file.
 
