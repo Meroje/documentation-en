@@ -1,5 +1,5 @@
-Understanding Novius OS
-#######################
+Discover Novius OS
+##################
 
 .. toctree::
 

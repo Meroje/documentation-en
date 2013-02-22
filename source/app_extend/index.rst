@@ -1,5 +1,5 @@
-Extends an application
-######################
+Extend an application
+#####################
 
 .. toctree::
 

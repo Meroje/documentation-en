@@ -1,5 +1,5 @@
-Ergonomic guidelines
-====================
+UI guidelines
+=============
 
 Novius OS interface is built upon great ergonomic guidelines. To develop applications, two of them should be known:
 tab navigation and App desk.

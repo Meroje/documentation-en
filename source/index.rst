@@ -12,8 +12,8 @@ Sources are on `Git Hub <https://github.com/novius-os/documentation-en>`__, we l
 * `Japanese version 日本語 <http://docs-ja.novius-os.org/>`__
 
 
-Summary
-=======
+Table of contents
+=================
 
 .. toctree::
 	:maxdepth: 2
