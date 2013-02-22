@@ -12,6 +12,11 @@
 # serve to show the default.
 
 import sys, os
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+if on_rtd:
+	tags.add('rtd')
+else:
+	tags.add('not_rtd')
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -25,7 +30,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = []
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.todo', 'sphinx.ext.coverage', 'sphinx.ext.ifconfig', 'sphinxcontrib.phpdomain']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -242,3 +247,21 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+if on_rtd:
+	intersphinx_mapping = {
+	'api': ('http://docs-api.novius-os.org/en/latest/', None),
+	'en': ('http://docs.novius-os.org/en/latest/', None),
+	'fr': ('http://docs-fr.novius-os.org/en/latest/', None),
+	'ja': ('http://docs-ja.novius-os.org/en/latest/', None),
+	  }
+	todo_include_todos = False
+else:
+	intersphinx_mapping = {
+	'api': ('http://novius-os-docs-api/', None),
+	'en': ('http://docs.novius-os.org/en/latest/', None),
+	'fr': ('http://docs-fr.novius-os.org/en/latest/', None),
+	'ja': ('http://docs-ja.novius-os.org/en/latest/', None),
+	  }
+	todo_include_todos = True
+	intersphinx_cache_limit = -1
