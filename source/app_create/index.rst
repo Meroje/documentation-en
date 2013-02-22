@@ -5,4 +5,4 @@ Create a new application
 
 	app_wizard
 	enhancer
-
+	template
