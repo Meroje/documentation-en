@@ -250,18 +250,18 @@ texinfo_documents = [
 
 if on_rtd:
 	intersphinx_mapping = {
-	'api': ('http://docs-api.novius-os.org/en/latest/', None),
-	'en': ('http://docs.novius-os.org/en/latest/', None),
-	'fr': ('http://docs-fr.novius-os.org/en/latest/', None),
-	'ja': ('http://docs-ja.novius-os.org/en/latest/', None),
+	'api': ('http://docs-api.novius-os.org/en/0.2/', None),
+	'en': ('http://docs.novius-os.org/en/0.2/', None),
+	'fr': ('http://docs-fr.novius-os.org/en/0.2/', None),
+	'ja': ('http://docs-ja.novius-os.org/en/0.2/', None),
 	  }
 	todo_include_todos = False
 else:
 	intersphinx_mapping = {
 	'api': ('http://novius-os-docs-api/', None),
-	'en': ('http://docs.novius-os.org/en/latest/', None),
-	'fr': ('http://docs-fr.novius-os.org/en/latest/', None),
-	'ja': ('http://docs-ja.novius-os.org/en/latest/', None),
+	'en': ('http://docs.novius-os.org/en/0.2/', None),
+	'fr': ('http://docs-fr.novius-os.org/en/0.2/', None),
+	'ja': ('http://docs-ja.novius-os.org/en/0.2/', None),
 	  }
 	todo_include_todos = True
 	intersphinx_cache_limit = -1
