@@ -1,25 +1,23 @@
-Créer un gabarit
-################
+Create a template
+#################
+
+1. :file:`metadata` configuration
+=================================
+
+Template metadata are described in :ref:`the API documentation <api:metadata/templates>`.
 
 
+2. View file creation
+=====================
 
-1. Définition dans le fichier :file:`metadata`
-==============================================
+File location depends on the ``file`` key configured in the :file:`metadata.config.php` file.
 
-Les metadata d'un template sont décrites dans la :ref:`documentation d'API <api:metadata/templates>`.
+Inside the template, some variable can be accessed:
 
-
-2. Création du fichier de vue
-=============================
-
-L'emplacement du fichier dépend de la clé ``file`` configurée dans le fichier :file:`metadata.config.php`.
-
-À l'intérieur du gabarit, vous avez accès à plusieurs variables intéressantes :
-
-:$wysiwyg: Un tableau contenant en clé le nom du WYSIWYG configuré dans le fichier :file:`metadata.config.php`
-  		   et en valeur le contenu saisi dans le back-office.
-:$page: L'instance du ``Nos\model_Page`` courant.
-:$main_controller: L'instance du :ref:`contrôleur s'occupant du front-office <api:php/classes/controller_front>`.
+:$wysiwyg: A hash which keys are the WYSIWYG name configured in the :file:`metadata.config.php` file and values are
+  		   content the user entered.
+:$page: ``Nos\model_Page`` instance.
+:$main_controller: :ref:`Front controller instance <api:php/classes/controller_front>`.
 
 .. code-block:: html
 
@@ -33,10 +31,9 @@ L'emplacement du fichier dépend de la clé ``file`` configurée dans le fichier
 
     <body>
 
-        <header>Cette zone d'entête sera affichée sur toutes les pages configurées avec ce gabarit.</header>
+        <header>This header will be displayed on all pages configured to use this template.</header>
 
         <div id="menu">
-            Mon joli menu
         </div>
 
         <div id="content">
