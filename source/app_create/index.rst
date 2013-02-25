@@ -7,3 +7,4 @@ Create a new application
 	enhancer
 	template
 	add_field
+    appdesk_views
