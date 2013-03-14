@@ -57,6 +57,11 @@ Step 4: Finishing the installation
 	:alt: Step 4
 	:align: center
 
+.. warning::
+
+    We urge you to follow the recommendation of this page.
+
+    On setting contexts, refer to the :doc:`principles </understand/multi_context/principles>` and :ref:`API documentation <api:php/configuration/software/multi_contexts>`.
 
 
 Applications
