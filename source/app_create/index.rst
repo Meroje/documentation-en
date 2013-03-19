@@ -10,3 +10,4 @@ Create a new application
 	appdesk_views
 	attachment
 	translate
+	migrations
