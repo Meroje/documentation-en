@@ -10,3 +10,6 @@ two things you should know:
 * Whenever it is possible, sql update must be on a separate file (in order to make easier manual updates). As most of
   the time only sql requests are executed, a migration class has been implemented in order to ease migrations. You can
   take a look at the :ref:`API documentation <api:php/classes/migration>`.
+
+When an application is installed or updated, migration files are executed (if they haven't been already) through the
+application manager.
