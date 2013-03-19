@@ -77,7 +77,7 @@ MVC applies to core, and also to applications
 	:alt: Files organisation
 	:align: center
 
-There are 5 main directories:
+There are 6 main directories:
 
 :file:`classes`
 	It's where your logic belongs, .i.e. classes which defines and manipulares data.
@@ -92,6 +92,9 @@ There are 5 main directories:
 
 :file:`lang`
 	This directory contains translation files, with a sub-directory for each language.
+
+:file:`migrations`
+	This directory contains migration files.
 
 :file:`static`
 	This directory contains JavaScript and CSS files, and public resources (such as images).
