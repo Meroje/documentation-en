@@ -1,0 +1,61 @@
+0.2 version notes
+=================
+
+New features
+------------
+
+* Novius OS can now manage multiple contexts: one or several websites, each one with one or several languages
+* Added the **Slideshow** application
+* Added the **Form** application
+* Added the **‘Build your app’ wizard** application
+* Added the **Simple Google+ share** ``sharer`` on the same level as Facebook and Twitter
+* Back-office can now speak french in addition to english
+* | Back-office tabs can be closed with a middle click
+  | New button *Close all other tabs*
+
+Developpers
+-----------
+
+
+* Consequences of the switch from multi-languages to multi-contexts
+
+	* The context configuration is done in a dedicated file (it's not in :file:`config.php` anymore). Two new keys
+	  ``contexts`` and ``sites`` exists now, in addition to ``locales``
+	* Every columns ``lang``, ``lang_common_id``, ``lang_is_main`` of the database have been renamed with ``context``
+	* The new ``context`` columns are now larger, from 5 to 25 characters
+	* The ``Translatable`` ``behaviour`` has been renamed ``Twinnable``
+	* In the ``CRUD``, the ``context`` notion has been replaced by ``environment``, to prevent confusions (``context_relation`` -> ``environment_relation``, ``item_context`` -> ``item_environment``)
+	* Every associated variables have been renamed, too
+
+* Updated vendors to the following versions:
+
+	* **jQuery**, updated from 1.7.2 to **1.8.2**
+	* **jQuery UI**, updated from 1.8.22 to **1.8.24**
+	* **Wijmo**, updated from 2.1.4 to **2.2.2**
+	* **tinyMCE**, updated from 3.5.6 to **3.5.7**
+	* **FuelPHP** and its packages (including ``email``), updated from 1.2 to **1.4**
+
+* Changes in the pages API:
+
+	* New class ``Tools_Url``
+	* ``Model_Page->get_link()`` -> ``Model_Page->link()``
+	* ``Model_Page->get_href()`` -> ``Model_Page->url()``
+	* ``Model_Page::get_url()`` -> ``Tools_Url::page()``
+	* Deleted ``Model_Page::get_url_absolute()``
+	* Every methods now returns absolutes URLs
+
+* Merged and enhanced configuration files for ``app-desk``, ``inspector`` and ``CRUD``:
+
+	* New ``common`` configuration file for model-specific data
+	* Possibility to format a ``grid`` column from the PHP configuration (not only JavaScript).
+	* Possibilité de formatter une colonne d'une ``grid`` via la configuration PHP (et plus seulement en Javascript)
+
+* In ``Controller_Crud``, the ``from_item`` was renamed to ``init_item`` and is only called for new items
+* New ``Attachment`` class to handle files attached to an item, without adding them to the media centre
+* ``widget`` have been replaced to ``renderers``. Classes and view files were updated accordingly.
+* Every view and configuration file are extendable in the ``local/config`` directory from the website
+* Created a new controller for ``enhancer``'s popup in the Wysiwyg, with a default preview
+* The ``upload.disabled_extensions`` configuration key was moved to ``novius-os.upload.disabled_extensions``
+* $page and $main_controller variables are now available within the template
+* The time picker ``renderer`` can be used outside a ``Fieldset`` (standalone way)
+* The ``front.start`` event has an additional ``cache_path`` parameter.
