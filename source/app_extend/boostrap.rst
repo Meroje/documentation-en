@@ -1,11 +1,11 @@
-Le bootstrap
-############
+Bootstrap
+#########
 
-Le fichier bootstrap permet d'exécuter du code php lors du chargement d'un site / d'une application.
-Il est possible d'en créer à deux emplacements :
+The bootstrap file allows you to execute php code when the website / an application is loaded.
+It can be placed in two locations :
 
-* ``local/bootstrap.php`` : s'éxecutera  lors du chargement du site.
-* ``local/applications/APPLICATION/bootstrap.php`` : s'éxecutera lors du chargement de l'application ``APPLICATION``.
+* ``local/boostrap.php``: will be executed when the website is loaded.
+* ``local/applications/APPLICATION/bootstrap.php``: will be executed when the application ``APPLICATION`` is loaded.
 
-L'intérêt d'un tel fichier est qu'il permet de facilement étendre une application. C'est dans ces fichiers que l'on
-pourra utiliser les :ref:`événements <api:php/events>` et les :ref:`redirections de vue <api:php/classes/view>`.
+It is possible to use the bootstrap to extend an application. It is there :ref:`events <api:php/events>` and
+:ref:`view redirects <api:php/classes/view>` can be used.
