@@ -11,8 +11,8 @@ Autoloader
 
 Two ``namespaces`` are added by Novius OS :
 
-:novius-os: points to :ref:`NOSPATH <api:php/constants/NOSPATH>`.
-:local: points to :ref:`APPPATH <api:php/constants/APPPATH>`.
+:novius-os: points to :ref:`NOSPATH <api:php/constants>`.
+:local: points to :ref:`APPPATH <api:php/constants>`.
 
 Bootstrap and entry points
 **************************

@@ -10,3 +10,5 @@ Discover Novius OS
 	applications
 	multi_context/index
 	media_centre
+	permissions
+	front_and_cache

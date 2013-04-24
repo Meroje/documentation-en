@@ -38,9 +38,7 @@ the PHP script, its name can vary upon one server or another:
 * ``X-Accel-Redirect`` is used by **nginx**.
 
 
-.. todo::
-
-	Link on how-to configure XSendFile for Apache in Novius OS.
+.. seealso:: :doc:`install/post_install_optimisations`
 
 .. index:: Attached files
 .. index:: Attachment
