@@ -13,8 +13,8 @@ If you installed Novius OS with :program:`Git`, run these commands from Novius O
 .. code-block:: bash
 
 	git fetch origin
-	git checkout master/0.2
-	git merge origin/master/0.2
+	git checkout master/chiba
+	git merge origin/master/chiba
 	git submodule update --recursive --init
 
 Zip
