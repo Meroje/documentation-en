@@ -38,7 +38,7 @@ the PHP script, its name can vary upon one server or another:
 * ``X-Accel-Redirect`` is used by **nginx**.
 
 
-.. seealso:: :doc:`install/post_install_optimisations`
+.. seealso:: :doc:`/install/post_install_optimisations`
 
 .. index:: Attached files
 .. index:: Attachment

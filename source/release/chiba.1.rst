@@ -1,5 +1,5 @@
-Release notes 0.2.1
-###################
+Release notes Chiba 1
+#####################
 
 News features
 =============
@@ -46,7 +46,7 @@ Developer
 
     * Ability to define per-application permissions with a configuration file
     * New API to check permissions for a user, or a specific role
-    * Ability to enable multi-roles on the users with the ``novius-os.users.enable_roles` configuration.
+    * Ability to enable multi-roles on the users with the ``novius-os.users.enable_roles`` configuration.
 
 
 Deprecated

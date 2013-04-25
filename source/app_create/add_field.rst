@@ -14,7 +14,7 @@ Syntax used is using a existing feature, which defines how a column displays.
 
     `FuelPHP documentation about model properties <http://docs.fuelphp.com/packages/orm/creating_models.html#propperties>`__
 
-Moreover, Novius OS team implemented :term:`renderers <Renderer>`, which allows more freedom. Some renderer allow to
+Moreover, Novius OS team implemented :ref:`renderers <api:php/renderers>`, which allows more freedom. Some renderer allow to
 select medias, pages, date.
 
 Configuration example:

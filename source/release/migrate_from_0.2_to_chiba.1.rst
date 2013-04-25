@@ -1,8 +1,8 @@
-Migration guide from the 0.2 version to the 0.2.1 version
-#########################################################
+Migration guide from the 0.2 version to the Chiba 1 version
+###########################################################
 
 Few changes are needed to migrate to the next version. The new API is compatible with the old one. From this version,
-Novius OS handles depreciations. Here a deprecated items from 0.2.1:
+Novius OS handles depreciations. Here a deprecated items from Chiba 1:
 
 * ``Nos\Renderer_Media`` should be renamed to ``Nos\Media\Renderer_Media``.
 * Launchers configuration: the ``url`` key is deprecated. Use 'action' instead.
