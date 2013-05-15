@@ -73,7 +73,7 @@ In the :file:`mon_appli::config/controller/admin/enhancer.config.php` file:
         <?php
 
         return array(
-            // Configuration des options de configuration dans la popup
+            // Popup configuration options
             'fields' => array(
                 'item_per_page' => array(
                     'label' => __('Item per page:'),
