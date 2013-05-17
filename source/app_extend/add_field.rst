@@ -25,7 +25,7 @@ In the model
 Declare the field
 =================
 
-We going to listen the event of loading the model config file.
+We're going to listen the event on the model config file.
 
 .. code-block:: php
 
@@ -46,7 +46,7 @@ We going to listen the event of loading the model config file.
 Activate the ``properties`` cache
 =================================
 
-* Create the file :file:`local/config/config.php` by copying :file:`local/config/config.php.sample` if it's not already do.
+* Create the file :file:`local/config/config.php` by copying :file:`local/config/config.php.sample` (if necessary).
 * Uncomment the line (or create it) with the key ``cache_model_properties`` and set it to ``true``:
 
     .. code-block:: php
@@ -64,9 +64,9 @@ Activate the ``properties`` cache
             ),
         );
 
-Whe activate, all models ``properties`` will be cached in the directory :file:`local/cache/fuelphp/model_properties/`.
-When a field is added and not declared, at the first call to ``get()`` or ``set()`` for this field,
-``properties`` will be updated by a columns listing DB request.
+When activated, all models ``properties`` will be cached in the directory :file:`local/cache/fuelphp/model_properties/`.
+When a column is added and not declared, the first call to ``get()`` or ``set()`` for this column will fetch the schema
+from the DB and update the cached ``properties`` .
 
 .. warning::
 
