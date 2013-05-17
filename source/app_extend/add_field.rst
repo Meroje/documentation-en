@@ -14,6 +14,68 @@ In the database
 
     ALTER TABLE `nos_blog_post` ADD `post_source` VARCHAR(255);
 
+In the model
+************
+
+2 choices:
+
+* Declare the new field in the model ``properties``.
+* Activate the cache mechanism of models ``properties``.
+
+Declare the field
+=================
+
+We going to listen the event of loading the model config file.
+
+.. code-block:: php
+
+    <?php
+
+    Event::register_function('config|noviusos_blog::model/post', function(&$config) {
+        $config['properties']['post_source'] = array(
+            'default' => null,
+            'data_type' => 'varchar',
+            'null' => false,
+        );
+    });
+
+.. seealso::
+
+    `Defining properties in FuelPHP documentation <http://fuelphp.com/docs/packages/orm/creating_models.html#/propperties>`__
+
+Activate the ``properties`` cache
+=================================
+
+* Create the file :file:`local/config/config.php` by copying :file:`local/config/config.php.sample` if it's not already do.
+* Uncomment the line (or create it) with the key ``cache_model_properties`` and set it to ``true``:
+
+    .. code-block:: php
+
+        <?php
+
+        return array(
+            //...
+
+            'novius-os' => array(
+                //...
+                'cache_model_properties' => true,
+
+                //...
+            ),
+        );
+
+Whe activate, all models ``properties`` will be cached in the directory :file:`local/cache/fuelphp/model_properties/`.
+When a field is added and not declared, at the first call to ``get()`` or ``set()`` for this field,
+``properties`` will be updated by a columns listing DB request.
+
+.. warning::
+
+    This mechanism `only works with the MySQL and MySQLi drivers <http://fuelphp.com/docs/packages/orm/creating_models.html#/creation>`__.
+
+.. seealso::
+
+    :ref:`Documention for Novius OS configuration <api:php/configuration/software>`.
+
 
 In the form
 ***********
