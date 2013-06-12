@@ -273,10 +273,10 @@ The controller can therefore switch content depending the called URL. Here is an
 .. _app_create/enhancers:
 
 When an enhancer manage URLs for some models (ORM), it must know the mapping between models and URLs. This is allowed by
-the static method ``get_url_model()``:
+the static method ``getUrlEnhanced()``:
 
 .. code-block:: php
-   :emphasize-lines: 7-26
+    :emphasize-lines: 7-29
 
     <?php
 
@@ -284,22 +284,25 @@ the static method ``get_url_model()``:
 
     class Controller_Front extends \Nos\Controller_Front_Application
     {
-        public static function get_url_model($item, $params = array())
+        public static function getUrlEnhanced($params = array())
         {
-            $model = get_class($item);
-            $page = isset($params['page']) ? $params['page'] : 1;
+            $item = \Arr::get($params, 'item', false);
+            if ($item) {
+                $model = get_class($item);
+                $page = isset($params['page']) ? $params['page'] : 1;
 
-            switch ($model)
-            {
-                // Blog post URL
-                case 'Nos\Blog\Model_Post' :
-                    return urlencode($item->virtual_name()).'.html';
-                    break;
+                switch ($model)
+                {
+                    // Blog post URL
+                    case 'Nos\Blog\Model_Post' :
+                        return urlencode($item->virtual_name()).'.html';
+                        break;
 
-                // Category URL
-                case 'Nos\Blog\Model_Category' :
-                    return 'category/'.urlencode($item->virtual_name()).($page > 1 ? '/'.$page : '').'.html';
-                    break;
+                    // Category URL
+                    case 'Nos\Blog\Model_Category' :
+                        return 'category/'.urlencode($item->virtual_name()).($page > 1 ? '/'.$page : '').'.html';
+                        break;
+                }
             }
 
             return false;
