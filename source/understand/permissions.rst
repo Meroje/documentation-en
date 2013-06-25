@@ -89,10 +89,13 @@ API to check a permission
 
     <?php
     // Simple: only 1 argument, the permission name
-    Permission::check('noviusos_app::delete_locked');
+    \Nos\User\Permission::check('noviusos_app::delete_locked');
 
     // Multiple (uses categories) : 2 arguments, the permission name + the category key
-    Permission::check('noviusos_app::create_in_folder', $folder_id);
+    \Nos\User\Permission::check('noviusos_app::create_in_folder', $folder_id);
+
+    // Handling acces level (advanced, useful when combined with multiple roles) : 2 arguments, the permission name + the level (numeric)
+    \Nos\User\Permission::atLeast('noviusos_app::level', '2_moderator');
 
 .. seealso:: API documentation of the :ref:`Permission <api:php/classes/permission>` class.
 
