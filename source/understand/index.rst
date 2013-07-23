@@ -8,6 +8,7 @@ Discover Novius OS
 	differences_fuelphp
 	ergonomy
 	applications
+	sharing
 	multi_context/index
 	media_centre
 	permissions
