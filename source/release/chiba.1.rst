@@ -1,7 +1,7 @@
 Release notes Chiba 1
 #####################
 
-News features
+New features
 =============
 
 * The behaviour publishable (``Behaviour_Publishable``) now allows to choose publication start and end dates.
