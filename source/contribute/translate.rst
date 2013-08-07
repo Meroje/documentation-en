@@ -8,11 +8,12 @@ Remember `we are here to help <http://forums.novius-os.org/en/want-translate-nov
 Beginners guide
 ***************
 
-The best way to quickly get started with Novius OS translation is to focus on the front-office texts (~220 words only). They shouldn’t take you more than an hour to translate. Here are the steps to follow:
+The best way to get started with Novius OS translation is to begin with the front-office texts (~220 words only). They shouldn’t take you more than an hour to translate. Here are the steps to follow:
 
 1. Go to `translate.novius-os.org <http://translate.novius-os.org>`__.
-2. In the projects’ list (on the right-hand side), click the latest version of Novius OS. On the next page, if your language is not listed, just `contact us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__, we'll add it for you.
+2. In the projects’ list (on the right-hand side), click the latest version of Novius OS. If on the next page your language is not listed, `let us know <http://forums.novius-os.org/en/want-translate-novius,15.html>`__, we'll add it for you.
 3. There are only four files to translate:
+
     * Blog application: :file:`noviusos_blognews > front.po`
     * Forms application: :file:`noviusos_forms > front.po`
     * Comments application: :file:`noviusos_comments > front.po`
