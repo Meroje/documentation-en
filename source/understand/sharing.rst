@@ -78,4 +78,4 @@ Here is how the data catcher for simple sharing to Twitter is defined:
         ),
 	);
 
-The **Simple Twitter** data catcher require content nuggets featuring at least a title. URLs are optional but are used when provided.
+The **Simple Twitter** data catcher requires content nuggets featuring at least a title. URLs are optional but are used when provided.
