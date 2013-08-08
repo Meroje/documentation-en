@@ -53,7 +53,7 @@ If on :file:`translate.novius-os.org` home page, your language is not listed und
 Translation files
 =================
 
-Once your language is available on :file:`translate.novius-os.org`, click it. Then click the version of Novius OS you want to translate. If you don't know which one to choose, `ask us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__, we'll tell you.
+Once your language is available on :file:`translate.novius-os.org`, click it. Then click the version of Novius OS you want to translate. If you don't know which one to choose, go for the latest version. (Bear in mind Novius OS versions are named after cities and released in alphabetical order.)
 
 You now see a list of directories. The directories starting with :file:`noviusos_` are applications. :file:`framework` contains the strings from the core.
 
