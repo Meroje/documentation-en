@@ -1,4 +1,4 @@
-Add commun fields to all contexts
+Add common fields to all contexts
 #################################
 
 If your application is ``Twinnable``, you may want to have some fields of a model common to all contexts.

@@ -1,9 +1,9 @@
 .. index:: Multi-Contexts
 
-Multi-contextes basics
-######################
+Multi-contexts basics
+#####################
 
-| Novius OS natively manager several websites, and each of them can have several linguistic versions.
+| Novius OS can natively manage several websites, and each of them can have several linguistic versions.
 | A context is a site / language pair.
 
 Example
@@ -33,8 +33,8 @@ Configuration
 
 Everything to configure the contexts is described in the :ref:`API documentation <api:php/configuration/software/multi_contexts>`
 
-Cas particuliers
-****************
+Special cases
+*************
 
 He who can do more can do less. Your Novius OS can manage:
 
