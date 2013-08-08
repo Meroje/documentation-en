@@ -5,21 +5,21 @@ Novius OS is ready to be translated into any language (It has already been trans
 
 Remember `we are here to help <http://forums.novius-os.org/en/want-translate-novius,15.html>`__. Your contribution is very appreciated, thank you.
 
-Beginners guide
-***************
+Quick start guide
+*****************
 
 The best way to get started with Novius OS translation is to begin with the front-office texts (~220 words only). They shouldn’t take you more than an hour to translate. Here are the steps to follow:
 
 1. Go to `translate.novius-os.org <http://translate.novius-os.org>`__.
-2. In the projects’ list (on the right-hand side), click the latest version of Novius OS. If on the next page your language is not listed, `let us know <http://forums.novius-os.org/en/want-translate-novius,15.html>`__, we'll add it for you.
-3. There are only four files to translate:
+2. In the projects’ list (on the right-hand side), click Novius OS latest version (Novius OS versions are released in alphabetical order). If your language is not listed on the next page, `let us know <http://forums.novius-os.org/en/want-translate-novius,15.html>`__, we'll add it for you.
+3. There are only four files to translate. No account required to suggest translations.
 
     * Blog application: :file:`noviusos_blognews > front.po`
     * Forms application: :file:`noviusos_forms > front.po`
     * Comments application: :file:`noviusos_comments > front.po`
     * Core: :file:`framework > front.po`
 
-That’s it, you’re done! Many thanks for your contribution. Now, if you feel like translating more, that’d be fantastic. Just keep reading.
+That’s it, you’re done! Many thanks for your contribution. Now that you’re started, what about translating more? That’d be fantastic. Keep reading, we tell you all you need to know about Novius OS translation.
 
 Copy style guide
 ****************
@@ -53,7 +53,7 @@ If on :file:`translate.novius-os.org` home page, your language is not listed und
 Translation files
 =================
 
-Once your language is available on :file:`translate.novius-os.org`, click it. Then click the version of Novius OS you want to translate. If you don't know which one to choose, go for the latest version. (Bear in mind Novius OS versions are named after cities and released in alphabetical order.)
+Once your language is available on :file:`translate.novius-os.org`, click it. Then click the version of Novius OS you want to translate. If you don't know which one to choose, go for the latest version (Novius OS versions are released in alphabetical order).
 
 You now see a list of directories. The directories starting with :file:`noviusos_` are applications. :file:`framework` contains the strings from the core.
 
