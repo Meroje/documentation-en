@@ -9,6 +9,8 @@ be define in these subdirectories.
 
 These language directories are named following locales, as for example :file:`fr` (French), or :file:`en` (English).
 
+.. image:: images/i18n_folder_structure.png
+
 Dictionaries are PHP files returning a array, similarly as configuration file.
 
 .. seealso:: :ref:`I18n class API <api:php/classes/i18n>`
@@ -51,11 +53,23 @@ translations.
 Other files
 ===========
 
+Elsewhere, you need to use the :func:`__()` function, which will retrieve (by default) the translations from the
+:file:`my_app::default` dictionary.
 
-Elsewhere, you need to do the following in order to translate files (including PHP):
+.. code-block:: php
 
-1. Use the :func:`__` function in order to get translations;
-2. For each file, configure in which dictionary will be used translations.
+    <?php
+
+    // Translation will be retrieve from my_app::lang/<lang>/default.lang.php
+    __('Translate this');
+
+
+
+Advanced mode: configure your own dictionaries
+----------------------------------------------
+
+If you don't want to put all your translations in the :file:`default.lang.php` file, you can configure in which dictionary
+the translations will be retrieved, **in each file** which uses the :func:`__()` function.
 
 
 It is quite simple for view and configuration files:
