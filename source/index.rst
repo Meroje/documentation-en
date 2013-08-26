@@ -21,6 +21,7 @@ Table of contents
 	install/index
 	understand/index
 	manage/index
+	fuelphp
 	app_create/index
 	app_extend/index
 	release/index
