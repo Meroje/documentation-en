@@ -48,6 +48,9 @@ Bold text is the ``type`` property value:
 * <input type="**button**">
 * <input type="**file**">
 
+<select> field
+^^^^^^^^^^^^^^
+
 .. code-block:: php
 
 	<?php
@@ -59,7 +62,7 @@ Bold text is the ``type`` property value:
 				'options' => array(
 					'm' => 'Male',
 					'f' => 'Female',
-				)
+				),
 			),
 			'validation' => array('required'),
 		),
