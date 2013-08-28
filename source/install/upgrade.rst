@@ -13,9 +13,22 @@ If you installed Novius OS with :program:`Git`, run these commands from Novius O
 .. code-block:: bash
 
 	git fetch origin
-	git checkout master/chiba
-	git merge origin/master/chiba
+	git checkout master/chiba2
 	git submodule update --recursive --init
+
+.. note::
+
+    The ``submodule update`` can display a line
+
+    .. code-block:: bash
+
+        warning: unable to rmdir packages/log: directory not empty
+
+    in this case, execute this command
+
+    .. code-block:: bash
+
+        rm -rf novius-os/packages/log/
 
 Zip
 ====
@@ -29,18 +42,17 @@ If you downloaded the Zip file, the procedure is more complex.
   have a :file:`novius-os/` directory.
 * In :file:`my_site/`, delete the following directories:
 	* :file:`my_site/novius-os/`
-	* :file:`my_site/local/migrations/`
 	* Every :file:`my_site/local/applications/noviusos_*` directories
 
 * Copy the following directories and files from :file:`novius-os/` to :file:`my_site/` :
 	* :file:`novius-os/`
-	* :file:`local/migrations/`
-	* Every :file:`local/applications/noviusos_*` directories
-	* :file:`public/install.php`
-	* :file:`public/.htaccess`
+	* Tous les répertoires :file:`local/applications/noviusos_*`
 
-You may need :file:`.sample` files later in the procedure. If so, copy them from the :file:`novius-os/` to
-:file:`my_site/` when asked.
+	* :file:`novius-os/`
+	* Every :file:`local/applications/noviusos_*` directories
+	* Every :file:`local/config/*.sample` files
+	* :file:`public/htdocs/install/`, :file:`public/htdocs/install.php` and :file:`public/htdocs/migrate.php.sample`
+	* Every files in root directory
 
 Now you can continue the update.
 
@@ -49,27 +61,42 @@ Run the migration
 
 Before running the automated migration tools, please backup your database.
 
+Via SSH
+=======
+
 If you're allowed to acces :program:`SSH` on the server, run this command from your Novius OS directory:
 
 .. code-block:: bash
 
 	sudo php oil refine migrate
+	sudo php oil refine migrate -m
 
-| If you can't access :program:`SSH`, you can run the migration from your browser:
+Via Browser
+===========
+
+If you can't access :program:`SSH`, you can run the migration from your browser:
 
 * First, you need to rename the :file:`public/migrate.php.sample` file to :file:`public/migrate.php`.
 * Open the file in your browser, such as :file:`http://www.my_site.com/migrate.php`.
 
+Via back-office
+===============
 
-Applications Manager
-********************
+If you can't access :program:`SSH`, you can run the migration from back-office of your Novius OS:
 
-From the back-office of Novius OS, open the ``Applications manager`` and update the applications which need it.
+* Connect to your back-office
+* Open the "Applications manager" application
+* Click on "Apply changes" for each applications, or on "Refresh all metadata" in toolbar if your in expert mode.
 
+.. warning::
+
+    When you access to your back-office without migrated, your software is in a instable state.
+    Sources not matches with the DB state. You will probably see error messages.
+    You can ignore them.
 
 Migrate your developments
 *************************
 
-If you have personnal developments, you need to follow the :doc:`/release/migrate_from_0.2_to_chiba.1`.
+If you have personnal developments, you need to follow the :doc:`/release/migrate_from_chiba.1_to_chiba.2`.
 
 
