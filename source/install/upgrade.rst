@@ -70,6 +70,6 @@ From the back-office of Novius OS, open the ``Applications manager`` and update 
 Migrate your developments
 *************************
 
-If you have personnal developments, you need to follow the :doc:`/release/migrate_from_0.1_to_0.2`.
+If you have personnal developments, you need to follow the :doc:`/release/migrate_from_0.2_to_chiba.1`.
 
 
