@@ -4,7 +4,7 @@ Migration guide from the Chiba 1 version to the Chiba 2 version
 Upgrade your Novius OS and its applications
 *******************************************
 
-See :doc:`/install/upgrade` page if you d'ont already do it.
+See :doc:`/install/upgrade` page if you didn't already do it.
 
 Migrate your developments
 **************************
@@ -14,7 +14,7 @@ Breaking changes
 
 .. _release/migrate_from_chiba.1_to_chiba.2/model_dataset:
 
-Model: columns of ``dataset`` now are encoded
+Model: columns of ``dataset`` are now encoded
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If a column of ``dataset`` contains HTML, you must add a key ``isSafeHtml`` for not encode it.
@@ -41,7 +41,7 @@ If a column of ``dataset`` contains HTML, you must add a key ``isSafeHtml`` for 
 CRUD: ``success`` callback is called after ``save``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In CRUD, when updating an item, ``success`` callback function is called after ``save`` (not before), like in inserting.
+In CRUD, when updating an item, ``success`` callback function is called after ``save`` (not before), like when inserting.
 If you use ``success`` in your developments, check that your code is compatible with a call after ``save``.
 
 .. _release/migrate_from_chiba.1_to_chiba.2/attachment:
@@ -51,8 +51,8 @@ Attachment: ``->url()`` and ``->urlResized()`` return absolute URLs
 
 Now, ``->url()`` and ``->urlResized()`` methods return absolutes URLs. You have two choices for update your developments:
 
-* check that you're don't concatenate ``base_url`` before calls of those methods.
-* Add a parameter equal to ``false`` in call of method.
+* check that you don't concatenate ``base_url`` before where you use those methods.
+* Add a parameter equals to ``false`` at call-time.
 
     .. code-block:: php
 
@@ -64,11 +64,11 @@ Now, ``->url()`` and ``->urlResized()`` methods return absolutes URLs. You have 
 
 .. _release/migrate_from_chiba.1_to_chiba.2/comments:
 
-Comments: now comments are ``contextable``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Comments: they now are ``contextable``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Migration tries to guess context of existing comments, but if you've implement comments on a not contextable model,
-migration can't do nothing. In this case, set yourself context (``comm_context`` column of ``nos_comment`` table)
+Migration tries to guess the context of existing comments, but if you've implemented comments on a non contextable model,
+migration won't be able to do it. In this case, you habe to set the context manually (``comm_context`` column of ``nos_comment`` table)
 if you want to see those comments in new administration interface.
 
 .. _release/migrate_from_chiba.1_to_chiba.2/blognews:
@@ -76,7 +76,7 @@ if you want to see those comments in new administration interface.
 Blog/News: the default size of thumbnails have change and they are clickable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* The default size of thumbnails have change from 200 to 120 pixels on list, always 200 on item.
+* The default size of thumbnails have change from 200 to 120 pixels on list, remains 200 on item.
 * Thumbnails are clickable.
 
 If you want to revert to the previous configuration:
@@ -105,7 +105,7 @@ If you want to revert to the previous configuration:
 Deprecated
 ----------
 
-Those updates are not mandatory but desirable to be able to migrate without trouble when next version.
+Those updates are not mandatory but desirable to be able to migrate without trouble when next version is released.
 
 .. _release/migrate_from_chiba.1_to_chiba.2/enhancer:
 
@@ -201,7 +201,7 @@ Page: Model_Page->link() deprecated
 Event ``user_login``
 ^^^^^^^^^^^^^^^^^^^^
 
-The ``user_login`` event is deprectaed, use ``admin.loginSuccess`` instead.
+The ``user_login`` event is deprecated, use ``admin.loginSuccess`` instead.
 
 .. seealso:: :ref:`api:php/events/admin.loginSuccess`
 
