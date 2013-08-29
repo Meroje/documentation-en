@@ -8,3 +8,5 @@ Version notes
     chiba.1
     migrate_from_0.2_to_chiba.1
     chiba.2
+    migrate_from_chiba.1_to_chiba.2
+

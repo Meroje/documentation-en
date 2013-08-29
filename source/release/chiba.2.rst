@@ -18,14 +18,11 @@ Developer
 Breaking changes
 ----------------
 
-* **Model**: If a column of a ``dataset`` contains HTML, you must also set :ref:`'isSafeHtml' => true <api:php/configuration/application/common>` if you don't want that it to be encoded (for security reasons).
-* **CRUD**: For item updating, the callback function ``success`` is called after ``save`` (not before), like for creating.
-* **Attachment**: Methods ``->url()`` and ``->urlResized()`` :ref:`return absolute URLs <api:php/classes/attachment>`. They accept an optional parameter for the return of relative URLs.
-* **Comments**: Comments are now contextable. Migration tries to guess context of existing comments, but if you've implement comments on a not contextable model, migration can't do nothing: set yourself context if you want to see those comments in new administration interface.
-* **Blog/News**: Thumbnail is now configurable (size & link).
-
-    * Default thumbnail size changed from 200 everywhere to 120 in the listing and 200 on the item.
-    * Thumbnail can now be clicked to go on the item page (set ``thumbnail.front.list.link_to_item = false`` to restore old behaviour).
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/model_dataset`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/crud_success`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/attachment`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/comments`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/blognews`
 
 Vendors update
 --------------
@@ -76,6 +73,7 @@ Improvements
 * **Media**: Increased title and url fields size.
 * **Comments**: New API for use of ``noviusos_comments`` application.
 * **Form**: New ``message`` view for the confirmation.
+* **Blog/News**: :ref:`Thumbnail is now configurable (size & link) <api:applications/noviusos_blognews>`.
 * **Misc**: New events :ref:`404.mediaFound <api:php/events/404.mediaFound>`, :ref:`404.attachmentFound <api:php/events/404.attachmentFound>`, :ref:`admin.loginFail <api:php/events/admin.loginFail>` and :ref:`nos.deprecated <api:php/events/nos.deprecated>`.
 * **Misc**: All URLs are now urlencoded when use in a href or in a redirection.
 * **Misc**: New ``temp`` directory in :file:`local/data`, assign to :ref:`novius-os.temp_dir <api:php/configuration/software>` config key by default.
@@ -84,8 +82,8 @@ Improvements
 Deprecated
 ----------
 
-* **Enhancer**: ``get_url_model($item, $params)`` in :ref:`enhancer front controller <app_create/enhancer/url>` is deprecated, please use ``getURLEnhanced($params)`` and ``$item`` in a key ``item`` of ``$params``.
-* **Media**: Change :ref:`Model_Media API <api:php/models/media/model_media/methods>`, deprecating all ``snake_case`` methods.
-* **Media**: Deprecating ``delete_from_disk()`` and ``delete_public_cache()`` :ref:`methods of Model_Folder <api:php/models/media/model_folder/methods>`. Use ``deleteFromDisk()`` and ``deleteCache()`` instead.
-* **Page**: ``Model_Page->link()`` is deprecated, please use :ref:`Model_Page->htmlAnchor() <api:php/models/model_page/methods>` instead.
-* **Misc**: Event ``user_login`` is deprecated, please use :ref:`admin.loginSuccess <api:php/events/admin.loginSuccess>` instead.
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/enhancer`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/media`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/media_folder`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/page_link`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/user_login`
