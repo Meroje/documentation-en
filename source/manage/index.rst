@@ -5,3 +5,4 @@ Manage your website
 
 	install_app
 	define_contexts
+	friendly_slug
