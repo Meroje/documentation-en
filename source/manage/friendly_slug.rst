@@ -11,7 +11,7 @@ By default:
 * replace multiple ``-`` by one.
 
 But you can use others rules or define your own rule.
-You can also have special rules for :doc:`contexts <multi_context>`.
+You can also have special rules for :doc:`contexts </understand/multi_context/principles>`.
 
 Four setups of rules are defined:
 

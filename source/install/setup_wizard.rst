@@ -33,21 +33,17 @@ you these details. In other cases, here is an example for a ``localhost`` databa
     GRANT ALL PRIVILEGES ON `your_db_name`.* TO 'your_user_name'@localhost IDENTIFIED BY 'your_password';
     FLUSH PRIVILEGES;
 
-Fill in these four fields according to your database configuration.
+Fill in the four required fields according to your database configuration.
 
-.. image:: images/step-2.png
-	:alt: Step 2
-	:align: center
-
-This will create two files :file:`local/config/db.php` and :file:`local/config/crypt.php` and—more importantly-the
+This step will create two files :file:`local/config/db.php` and :file:`local/config/crypt.php` and—more importantly-the
 tables needed for Novius OS to run.
 
 Step 3: Creating the first administrator account
 --------------------------------------------------
 
-.. image:: images/step-3.png
-	:alt: Step 3
-	:align: center
+Fill the required fields for create the first administrator account of your Novius OS.
+Email and password will be used for the first connection.
+Those informations can be modified later in back-office.
 
 
 Step 4: Finishing the installation
