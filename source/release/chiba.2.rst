@@ -12,6 +12,10 @@ New features
     * Administration interface
     * Emails are sent when new comments are posted, to post author and others commenters.
 
+.. versionadded:: Chiba2.1
+
+* Add media mass upload feature.
+
 Developer
 =========
 
@@ -79,6 +83,17 @@ Improvements
 * **Misc**: New ``temp`` directory in :file:`local/data`, assign to :ref:`novius-os.temp_dir <api:php/configuration/software>` config key by default.
 * **Front**: ``is_preview`` is true only when you are logged in.
 
+.. versionadded:: Chiba 2.1
+
+* **Media**: Bugfix, images transformed was only display for users connected to back-office. For others, they return a ``403``.
+* **Media**: Bugfix on media permissions; when updating a user, his writing rights on medias were disabled.
+* **CRUD**: The configuration of button ``save`` is no more required in CRUD fields settings.
+* **ORM**: In Models, when use ``cache_model_properties``, new possibility to set a callback (``check_property_callback``, see :file:`local/config/config.php.sample`) to check if the property is a potential unknow column, and avoid a ``show field`` SQL request.
+* **Renderer**: New class ``Nos\Renderer`` for factorizing code between all renderers.
+* **Templates basic**: Refactoring for better factorization of code between top and left menu templates.
+* **Slideshow**: Refactoring configuration and organization. Widgets for displaying slideshow in front are manage by a formats config for better extendable.
+* **Blog/News and Comments**: Better clean-up of front-cache when a post or a comment is inserted, updated or deleted.
+
 Deprecated
 ----------
 
@@ -87,3 +102,8 @@ Deprecated
 * :ref:`release/migrate_from_chiba.1_to_chiba.2/media_folder`
 * :ref:`release/migrate_from_chiba.1_to_chiba.2/page_link`
 * :ref:`release/migrate_from_chiba.1_to_chiba.2/user_login`
+
+.. versionadded:: Chiba 2.1
+
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/renderer_selector`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/slideshow`

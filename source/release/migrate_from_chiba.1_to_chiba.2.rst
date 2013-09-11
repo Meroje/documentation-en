@@ -205,3 +205,32 @@ The ``user_login`` event is deprecated, use ``admin.loginSuccess`` instead.
 
 .. seealso:: :ref:`api:php/events/admin.loginSuccess`
 
+
+Migration Chiba 2 to Chiba 2.1
+*****************************
+
+.. versionadded:: Chiba 2.1
+
+Deprecated
+----------
+
+Those updates are not mandatory but desirable to be able to migrate without trouble when next version is released.
+
+.. _release/migrate_from_chiba.1_to_chiba.2/renderer_selector:
+
+Renderer_Selector->set_renderer_options()
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``set_renderer_options()`` method is deprecated, use ``setRendererOptions()`` instead.
+
+.. _release/migrate_from_chiba.1_to_chiba.2/slideshow:
+
+Slideshow : front-office views and configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* The configuration file :file:`noviusos_slideshow::slideshow` has been refactored for a better separation between slideshow's formats. Voir :ref:`API documentation of Slideshow <api:applications/noviusos_slideshow>`.
+* The configuration file :file:`noviusos_slideshow::flexslider` is deprecated, use :file:`noviusos_slideshow::formats/flexslider` instead.
+* The view :file:`noviusos_slideshow::slideshow_js` is deprecated, use :file:`noviusos_slideshow::flexslider/javascript instead` instead.
+* The view :file:`noviusos_slideshow::slideshow` is deprecated, use :file:`noviusos_slideshow::flexslider/slideshow instead` instead.
+
+The Chiba 2.1 version of Slideshow application has to make some migrations in the DB. See :ref:`install/upgrade/migration`.

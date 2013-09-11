@@ -56,6 +56,8 @@ If you downloaded the Zip file, the procedure is more complex.
 
 Now you can continue the update.
 
+.. _install/upgrade/migration:
+
 Run the migration
 *****************
 
