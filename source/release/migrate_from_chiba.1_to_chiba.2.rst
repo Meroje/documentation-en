@@ -223,6 +223,13 @@ Renderer_Selector->set_renderer_options()
 
 The ``set_renderer_options()`` method is deprecated, use ``setRendererOptions()`` instead.
 
+.. _release/migrate_from_chiba.1_to_chiba.2/renderer_media:
+
+Renderer_Media->parse_options()
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``parse_options()`` method is deprecated, use ``parseOptions()`` instead.
+
 .. _release/migrate_from_chiba.1_to_chiba.2/slideshow:
 
 Slideshow : front-office views and configuration

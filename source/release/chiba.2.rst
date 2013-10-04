@@ -106,4 +106,5 @@ Deprecated
 .. versionadded:: Chiba 2.1
 
 * :ref:`release/migrate_from_chiba.1_to_chiba.2/renderer_selector`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/renderer_media`
 * :ref:`release/migrate_from_chiba.1_to_chiba.2/slideshow`
