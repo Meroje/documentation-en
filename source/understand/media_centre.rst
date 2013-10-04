@@ -25,6 +25,10 @@ It works this way because we'll be able to handle **private** medias in the futu
 * or the file will be sent on the standard output, but without creating a symbolic link (permissions need to be checked
   for each and every request).
 
+In the case of :doc:`transformed images </app_create/image_transform>`, the process is similar
+with a additional step: storing of the transformed image in the directory :file:`local/cache/media/`.
+
+
 Optimisation
 ************
 
