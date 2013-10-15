@@ -27,6 +27,7 @@ Breaking changes
 * :ref:`release/migrate_from_chiba.1_to_chiba.2/attachment`
 * :ref:`release/migrate_from_chiba.1_to_chiba.2/comments`
 * :ref:`release/migrate_from_chiba.1_to_chiba.2/blognews`
+* :ref:`release/migrate_from_chiba.1_to_chiba.2/getUrlEnhanced`
 
 Vendors update
 --------------
