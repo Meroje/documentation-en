@@ -94,6 +94,15 @@ Improvements
 * **Slideshow**: Refactoring configuration and organization. Widgets for displaying slideshow in front are manage by a formats config for better extendable.
 * **Blog/News and Comments**: Better clean-up of front-cache when a post or a comment is inserted, updated or deleted.
 
+.. versionadded:: Chiba 2.2
+
+* **Renderer**: The class Nos\Renderer_Date_Picker was factorized into Nos\Renderer_Datetime_Picker
+* **Media**: Media and folders deletions are manage by models, not by CRUD controller
+* **i18n**: In the i18n class, adding addPriorityDictionary and addPriorityMessages methods
+* **Tasks**: FuelPHP tasks have been adapted to Novius OS. Tasks namespace now depends on application namespaces allowing two tasks with similar names in many applications.
+             A related application, `novius_taskmanager <https://github.com/novius/novius_taskmanager>`__, has been implemented in order to allow tasks management and execution from an browser.
+* **Form**: Improve layout of the answer email.
+
 Deprecated
 ----------
 
