@@ -104,6 +104,22 @@ Improvements
              A related application, `novius_taskmanager <https://github.com/novius/novius_taskmanager>`__, has been implemented in order to allow tasks management and execution from an browser.
 * **Form**: Improve layout of the answer email.
 
+.. versionadded:: Chiba 2.3
+
+* **PHP**: Version 5.5 officialy supported
+* **Renderer**: new option ``null_allowed`` (default to ``false``) on ``Nos\Renderer_Datetime_Picker``
+* **Misc**: Improve ``Toolkit_Image->sizes()``, ``Media`` image is not loaded in memory
+* **WYSIWYG**: In popup image, new fields border, align, vspace and hspace to easily update style
+* **CRUD**: The javascript for context common fields is improved. Now, unsupported inputs can implement their own blocking process
+* **CRUD**: Blocking process for context common fields is improved. Now it work also on not input fields (ie: renderer builded on a ``<div>``)
+* **CRUD**: Blocking process for context common fields supports virtual name renderer fields
+* **Profiler**: Some items from config are not displayed for security issues
+* **Profiler**: New methods ``markDeltaStart()`` and ``markDeltaStop()`` to study time durations
+* **ORM**: New parameter ``through_where`` in ``many_many`` relation configuration
+* **Form**: Adding a ``replyto`` field to sending emails if an email is present in the answer. Depends on the ``add_replyto_to_first_email`` config key of ``noviusos_form.config.php`` file (default ``true``)
+* **Form**: Move submit email field on the top of the admin form
+* **AppWizard**: Added check on ``local/applications`` folder permission
+
 Deprecated
 ----------
 
