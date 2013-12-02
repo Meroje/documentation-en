@@ -120,6 +120,10 @@ Improvements
 * **Form**: Move submit email field on the top of the admin form
 * **AppWizard**: Added check on ``local/applications`` folder permission
 
+.. versionadded:: Chiba 2.3.1
+
+* **UI**: When inserting during a pick process, picks automatically the new item (media, page)
+
 Deprecated
 ----------
 
