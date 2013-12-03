@@ -124,6 +124,10 @@ Improvements
 
 * **UI**: When inserting during a pick process, picks automatically the new item (media, page)
 
+.. versionadded:: Chiba 2.3.2
+
+* **Security**: Fix XSS in profiler
+
 Deprecated
 ----------
 
