@@ -20,7 +20,7 @@ Changing environment to production
 
 The first step is to change the Fuel environment (stored in `Fuel::$env`). This will automatically adapt few settings
 such as cache length or logs level. The
-`FuelPHP website <http://fuelphp.com/docs/general/environments.html#/env_apache>`_ explains how to change this
+`FuelPHP website <http://fuelphp.com/docs/general/environments.html#/env_apache>`__ explains how to change this
 environment.
 
 You can do it by changing `SetEnv` in the Apache configuration.
@@ -37,7 +37,7 @@ Database configuration
 You need to add the `production` key into `local/config/db.config.php`. The configuration can be quite similar than the
 one of `development`; if you installed the instance on the production server, you just have to rename the `development`
 key to `production`. This is very well documented in the
-`FuelPHP website <http://fuelphp.com/docs/classes/database/introduction.html>`_.
+`FuelPHP website <http://fuelphp.com/docs/classes/database/introduction.html>`__.
 
 Customizing cache durations
 ***************************
