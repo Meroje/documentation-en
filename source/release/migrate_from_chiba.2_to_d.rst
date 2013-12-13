@@ -30,3 +30,30 @@ Wijmo from 2013v1.4 to 2013v3.20
 
 Take a look of release notes of Wijmo between 2013v3.20 and 2013v1.4: http://wijmo.com/wiki/index.php/Version_Histories
 
+Deprecated
+----------
+
+Those updates are not mandatory but desirable to be able to migrate without trouble when next version is released.
+
+.. _release/migrate_from_chiba.2_to_d/i18n_crud_config:
+
+Some i18n keys of CRUD config for plural forms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The translation system of Novius OS now respect plural forms of languages. Some i18n keys of CRUD config are affected.
+
+These keys now must contain an array of different plurals of translation, and not the translated text:
+
+* ``deleting with N contexts``
+* ``deleting with N languages``
+* ``deleting with N children``
+* ``deleting button N items``
+* ``N items``
+* ``showNbItems``
+
+These keys are unnecessary:
+
+* ``1 child``
+* ``deleting button 1 item``
+* ``deleting button 0 items``
+* ``1 item``
