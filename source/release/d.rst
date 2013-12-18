@@ -33,6 +33,7 @@ Improvements
 * **404**: allow to use novius_ftplite app to add custom robots.txt (favicon or humans.txt)
 * | **Behaviour**: All aliases in ``where`` and ``order_by`` options of ``find()`` work whatever the level where the alias is used and even in chaining methods.
   | Concern: ``context`` in ``Contextable``, ``published`` in ``Publishable``, ``default_sort`` in ``Sortable``, ``parent`` in ``Tree`` and ``context_main`` in ``Twinnable``.
+* **Migration**: Add an incremental ID and an execution date in migration table
 
 Deprecated
 ----------
