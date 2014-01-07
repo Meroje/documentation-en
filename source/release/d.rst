@@ -16,6 +16,7 @@ Breaking changes
 
 * :ref:`release/migrate_from_chiba.2_to_d/fuelphp`
 * :ref:`release/migrate_from_chiba.2_to_d/wijmo`
+* :ref:`release/migrate_from_chiba.2_to_d/migrations.enabled_types.metadata`
 
 Vendors update
 --------------

@@ -30,6 +30,18 @@ Wijmo from 2013v1.4 to 2013v3.20
 
 Take a look of release notes of Wijmo between 2013v3.20 and 2013v1.4: http://wijmo.com/wiki/index.php/Version_Histories
 
+.. _release/migrate_from_chiba.2_to_d/migrations.enabled_types.metadata:
+
+End of support for config key migrations.enabled_types.metadata
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The config key ``migrations.enabled_types.metadata`` is no longer supported,
+and method ``Migration::canUpdateMetadata()`` no longer exist.
+During migration, all files in :file:`local/metadata` are supposed be writable.
+
+A new event ``migrate.exception`` is triggered if a migration throws an exception.
+This event can stop exception propagation.
+
 Deprecated
 ----------
 
