@@ -69,3 +69,27 @@ These keys are unnecessary:
 * ``deleting button 1 item``
 * ``deleting button 0 items``
 * ``1 item``
+
+
+.. _release/migrate_from_chiba.2_to_d/hmvc:
+
+Nos::hmvc() API is simplified
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Second argument can be just an array, not an array with an ``args`` key containing an array.
+
+Deprecated code:
+
+.. code-block:: php
+
+    <?php
+
+    \Nos::hmvc('request/url/', array('args' => array($first_parameter, $second_parameter)));
+
+Replace with:
+
+.. code-block:: php
+
+    <?php
+
+    \Nos::hmvc('request/url/', array($first_parameter, $second_parameter));

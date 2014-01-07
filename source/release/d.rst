@@ -40,3 +40,4 @@ Deprecated
 ----------
 
 * :ref:`release/migrate_from_chiba.2_to_d/i18n_crud_config`
+* :ref:`release/migrate_from_chiba.2_to_d/hmvc`
