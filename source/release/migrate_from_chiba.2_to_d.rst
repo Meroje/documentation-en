@@ -39,7 +39,7 @@ The config key ``migrations.enabled_types.metadata`` is no longer supported,
 and method ``Migration::canUpdateMetadata()`` no longer exist.
 During migration, all files in :file:`local/metadata` are supposed be writable.
 
-A new event ``migrate.exception`` is triggered if a migration throws an exception.
+A new event :ref:`migrate.exception <api:php/events/migrate.exception>` is triggered if a migration throws an exception.
 This event can stop exception propagation.
 
 Deprecated
