@@ -5,7 +5,7 @@ Extensions mechanisms
 Create a file in :file:`local`
 ******************************
 
-Any view or configuration file can be changed via the :file:`local` folder.
+Any view, configuration or lang file can be changed via the :file:`local` folder.
 
 This is possible thanks to the cascading file system existing in FuelPHP and adapted for Novius OS. It's very easy to
 do, because you only need to copy an existing file and change it how you like!
@@ -75,14 +75,15 @@ The second application defines its extending ``my_application`` through its :fil
     return array(
         'name' => 'Application 2',
         // It's an extension application
-        'extends' => 'my_application',
+        'extends' => array(
+            'my_application',
+        );
     );
 
 
 Once ``application_2`` is installed, it will be loaded at the same time than ``my_application`` is.
 
 When an application extends another one, some automatic behaviours falls into place.
-
 
 **Example:**
 
@@ -97,4 +98,5 @@ In ``application_2``, if the matching file :file:`applications/application_2/con
 i.e. in ``My\Application\Controller_Test``, the ``$config`` variable will contain the merge of the 2 files (the one of
 the extended ``my_application`` application, and also the one from ``application_2`` which extends the first one).
 
+.. seealso:: :ref:`Metadata extends API<api:php/configuration/metadata/extends>`.
 

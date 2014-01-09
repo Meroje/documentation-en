@@ -93,3 +93,95 @@ Replace with:
     <?php
 
     \Nos::hmvc('request/url/', array($first_parameter, $second_parameter));
+
+.. _release/migrate_from_chiba.2_to_d/loadConfiguration:
+
+Method \Config::loadConfiguration()
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The method ``\Config::loadConfiguration()``. Use ``\Config::load()``.
+
+Deprecated code:
+
+.. code-block:: php
+
+    <?php
+
+    $config = \Config::loadConfiguration('application_name', 'file_name');
+    //or
+    $config = \Config::loadConfiguration('application_name::file_name');
+
+Replace with:
+
+.. code-block:: php
+
+    <?php
+
+    $config = \Config::load('application_name::file_name', true);
+
+.. _release/migrate_from_chiba.2_to_d/applicationRequiredFromMetadata:
+
+\Nos\Application::applicationRequiredFromMetadata() scope public
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The method ``\Nos\Application::applicationRequiredFromMetadata()`` is not intended to be called outside the ``\Nos\Application`` class.
+It will become protected in future.
+
+You can get all applications dependencies by loading the :file:`app_dependencies` metadata file.
+
+.. code-block:: php
+
+    <?php
+
+    $dependencies = \Nos\Config_Data::get('app_dependencies', array());
+
+.. _release/migrate_from_chiba.2_to_d/extends.application:
+
+In metadata files, ``extends.application`` key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In metadata files, the ``extends`` key containing an array with an ``application`` key is deprecated.
+
+The ``extends`` key must contain only an array with applications names in values.
+
+Deprecated code:
+
+.. code-block:: php
+
+    <?php
+
+    return array(
+        'name'    => 'Application name',
+        //...
+        'extends' => array(
+            'application' => 'application_name',
+            'extend_configuration' => false,
+        ),
+    );
+
+Replace with:
+
+.. code-block:: php
+
+    <?php
+
+    return array(
+        'name'    => 'Application name',
+        //...
+        'extends' => array(
+            'application_name',
+        ),
+    );
+
+.. _release/migrate_from_chiba.2_to_d/extends.apps:
+
+Config files extended by application extending mechanism
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Config files extended by application extending mechanism must be defined in a subdirectory apps/application_name/
+
+For sample, if your application A extends the sample.config.php file of the application B.
+
+Deprecated location: :file:`local/applications/application_a/config/sample.config.php`
+
+Move to: :file:`local/applications/application_a/config/apps/application_b/sample.config.php`

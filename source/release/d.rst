@@ -4,7 +4,10 @@ Release notes D
 New features
 ============
 
+* Applications can extend multiple applications
+* The extend application mechanism works also for views and lang files, not only for config files
 * Russian translations
+* Spanish translations
 * Interlingue (Occidental) translations
 * Japanese translations updated
 
@@ -41,3 +44,7 @@ Deprecated
 
 * :ref:`release/migrate_from_chiba.2_to_d/i18n_crud_config`
 * :ref:`release/migrate_from_chiba.2_to_d/hmvc`
+* :ref:`release/migrate_from_chiba.2_to_d/loadConfiguration`
+* :ref:`release/migrate_from_chiba.2_to_d/applicationRequiredFromMetadata`
+* :ref:`release/migrate_from_chiba.2_to_d/extends.application`
+* :ref:`release/migrate_from_chiba.2_to_d/extends.apps`
