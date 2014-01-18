@@ -14,7 +14,7 @@ For an application, the file should be copied into :file:`local/config/apps/{{ap
 :file:`local/views/apps/{{application}}/`.
 
 To extend a file from the core of Novius OS, we'll use :file:`local/config/apps/novius-os/` and
-:file:`local/views/apps/novius-os/`.
+:file:`local/views/novius-os/`.
 
 The 'generic' pattern is :file:`local/{{section}}/{{application}}/` with:
 
