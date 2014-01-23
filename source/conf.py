@@ -110,8 +110,12 @@ html_theme_options = {
 	"commonbar_switch_url" : "http://docs-fr.novius-os.org"
 }
 
-# Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['_theme']
+if on_rtd:
+    import sphinx_rtd_theme
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path(), '_theme']
+else:
+    # Add any paths that contain custom themes here, relative to this directory.
+    html_theme_path = ['_theme']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
