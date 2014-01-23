@@ -57,7 +57,7 @@ Symptoms
 Workaround
 ----------
 
-In this case, you can try to run your WAMP server with administrator privileges.
+You can try to run your WAMP server with administrator privileges.
 
 Or you can try to change file permission on Novius OS directory, recursively on all subfolders.
 Give write access for everybody (`Example for windows 7 <http://www.wikihow.com/Change-File-Permissions-on-Windows-7>`__).
