@@ -142,4 +142,3 @@ Add this line in the :file:`.htaccess` file :
 .. code-block:: apache
 
     SetEnv MAGIC_QUOTES 0
-
