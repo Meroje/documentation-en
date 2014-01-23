@@ -24,7 +24,7 @@ Workaround
 * Find the virtualhost config file, commonly in :file:`/etc/apache2/site-enabled/`.
 * Edit the virtualhost config file with write permission.
 
-In this example, we use the nano editor and the virtualhost config file name is :file:`000-default` :
+In this example, we use the :program:`nano` editor and the virtualhost config file name is :file:`000-default` :
 
 .. code-block:: bash
 
