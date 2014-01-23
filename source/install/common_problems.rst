@@ -30,7 +30,7 @@ In this example, we use the :program:`nano` editor and the virtualhost config fi
 
     sudo nano /etc/apache2/site-enabled/000-default
 
-In the file, find a line like this (if Novius OS is installed in a :file:`/var/www/` subdirectory)  :
+In the file, find a line like this (if Novius OS is installed in a :file:`/var/www/` subdirectory):
 
 .. code-block:: apache
 
@@ -39,7 +39,7 @@ In the file, find a line like this (if Novius OS is installed in a :file:`/var/w
         Options FollowSymLinks
     </Directory>
 
-Change ``AllowOverride None`` by ``AllowOverride All``. Save your change and restart Apache :
+Change ``AllowOverride None`` by ``AllowOverride All``. Save your change and restart Apache:
 
 .. code-block:: bash
 
@@ -70,7 +70,7 @@ Write permissions with FTP
 Symptoms
 --------
 
-* If you've installed Novius Os by uploading it by FTP
+* You've installed Novius Os by uploading it by FTP
 * You have messages saying that some directories ``must be writeable``
 * You can not execute commands given, you can't access server by :program:`ssh`
 
@@ -104,14 +104,14 @@ Forbidden when access back-office
 Symptoms
 --------
 
-* After install wizard, when you try to access to back-office, your browser send you a page saying "Forbidden"
+* After install wizard, when you try to access to back-office, your browser send you a page saying ``Forbidden``
 
 This problem exists for Web hoster ``Infomaniak.ch``
 
 Workaround
 ----------
 
-Try to modify :file:`.htaccess` file. Change this line:
+Edit :file:`.htaccess` file. Change this line:
 
 
 .. code-block:: apache
@@ -132,12 +132,12 @@ Symptoms
 --------
 
 * You have the message saying ``PHP configuration directive ‘magic_quotes_gpc’ must be off``
-* You've use OVH Web hosting
+* You've use ``OVH`` Web hosting
 
 Workaround
 ----------
 
-Add this line in the :file:`.htaccess` file :
+Add this line in the :file:`.htaccess` file:
 
 .. code-block:: apache
 
