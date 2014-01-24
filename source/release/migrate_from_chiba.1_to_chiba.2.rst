@@ -248,5 +248,3 @@ Slideshow : front-office views and configuration
 * The view :file:`noviusos_slideshow::slideshow` is deprecated, use :file:`noviusos_slideshow::flexslider/slideshow instead` instead.
 
 The Chiba 2.1 version of Slideshow application has to make some migrations in the DB. See :ref:`install/upgrade/migration`.
-
-
