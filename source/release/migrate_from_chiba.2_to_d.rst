@@ -185,3 +185,4 @@ For sample, if your application A extends the sample.config.php file of the appl
 Deprecated location: :file:`local/applications/application_a/config/sample.config.php`
 
 Move to: :file:`local/applications/application_a/config/apps/application_b/sample.config.php`
+
