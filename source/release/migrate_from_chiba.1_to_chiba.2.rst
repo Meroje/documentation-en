@@ -214,7 +214,7 @@ The ``user_login`` event is deprecated, use ``admin.loginSuccess`` instead.
 
 
 Migration Chiba 2 to Chiba 2.1
-*****************************
+******************************
 
 .. versionadded:: Chiba 2.1
 
