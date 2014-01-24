@@ -113,6 +113,7 @@ html_theme_options = {
 import sphinx_rtd_theme
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path(), '_theme']
 
+
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 html_title = 'English documentation'
