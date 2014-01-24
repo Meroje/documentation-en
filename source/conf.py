@@ -104,7 +104,6 @@ html_theme = 'noviusos'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-	"sidebarwidth": 300,
 	"commonbar_lang" : "en",
 	"commonbar_switch" : "fr",
 	"commonbar_switch_url" : "http://docs-fr.novius-os.org"
