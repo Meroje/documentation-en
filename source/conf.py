@@ -15,6 +15,7 @@ import sys, os
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 if on_rtd:
 	tags.add('rtd')
+	subprocess.check_call(['git', 'submodule', 'update', '--init'], cwd='..')
 else:
 	tags.add('not_rtd')
 
