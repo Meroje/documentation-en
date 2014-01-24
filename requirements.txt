@@ -1,1 +1,3 @@
 sphinxcontrib-phpdomain
+sphinx_rtd_theme
+
