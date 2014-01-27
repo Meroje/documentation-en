@@ -1,5 +1,5 @@
 Common Installation Problems
-#############################
+############################
 
 .. sidebar:: Table of contents
 
@@ -82,7 +82,7 @@ You can give write permissions with your FTP client. For example, a `tuto for Fi
 ``chmod a+w`` means give write permissions for all users.
 
 GD installation on Ubuntu
-**************************
+*************************
 
 Symptoms
 --------
@@ -97,6 +97,23 @@ Workaround
 
     sudo apt-get install php5-gd
     sudo apt-get install libgd2-xpm-dev*
+
+Json extension not installed
+****************************
+
+Symptoms
+--------
+
+* You've message saying that ``Call to undefined function json_encode()`` or ``Call to undefined function json_decode()``
+
+Some distributions have removed the standard JSON extension as of PHP 5.5rc2 due to a license conflict.
+
+Workaround
+----------
+
+.. code-block:: bash
+
+     sudo apt-get install php5-json
 
 Forbidden when access back-office
 *********************************
@@ -126,7 +143,7 @@ By:
 
 
 magic_quotes_gpc mus be off
-****************************
+***************************
 
 Symptoms
 --------
