@@ -142,8 +142,8 @@ By:
     Options +FollowSymlinks -SymlinksIfOwnerMatch -Indexes
 
 
-magic_quotes_gpc mus be off
-***************************
+magic_quotes_gpc must be off
+****************************
 
 Symptoms
 --------
