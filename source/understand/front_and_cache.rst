@@ -121,7 +121,7 @@ To do so, use the ``addCacheSuffixHandler()`` method from the :ref:`Controller_F
 
     <?php
 
-    \Nos\Nos::main_controller->addCacheSuffixHandler(array(
+    \Nos\Nos::main_controller()->addCacheSuffixHandler(array(
         array(
             'type' => 'GET',
             'keys' => array('my_param'),
@@ -131,7 +131,7 @@ To do so, use the ``addCacheSuffixHandler()`` method from the :ref:`Controller_F
     // or
 
     // The callback function must return a string (empty string when you don't want to alter the cache path)
-    \Nos\Nos::main_controller->addCacheSuffixHandler(array(
+    \Nos\Nos::main_controller()->addCacheSuffixHandler(array(
         array(
             'type' => 'callable',
             'callable' => array('MyClasse', 'myMethod'),
