@@ -29,6 +29,7 @@ We take copywriting and translation very seriously. We have therefore establishe
 * :doc:`copy_style_guide`
 * :ref:`Charte rédactionnelle (Français) <fr:contribute/copy_style_guide>`
 * :ref:`スタイルガイド（日本語）<ja:contribute/copy_style_guide>`
+* :doc:`copy_style_guide_es`
 
 The copy style guide is to be read by every translator. If it's not available in your language then it is the first document to translate.
 
@@ -36,10 +37,17 @@ The copy style guide is to be read by every translator. If it's not available in
     We're happy to have the style guide translated by a professionnal translator. This key document may indeed prove hard to localise. `Contact us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__ about this translation.
 
 
-Translation server
-******************
+How to translate
+****************
 
 Novius OS translation server is available at `translate.novius-os.org <http://translate.novius-os.org>`__. It is powered by `Pootle <http://pootle.translatehouse.org>`__. Here is a quick guide to Pootle. (You may also want to have a look at `Evernote's handy tour of Pootle <http://translate.evernote.com/i/tour/>`__.)
+
+Translate offline
+=================
+
+If you prefer to translate offline (or just don't like Pootle!), you can use `OmegaT <http://www.omegat.org>`__ or any other CAT software which handles PO files.
+
+Go to the version and language you want to translate (see below) and click the 'Download' link. Once you're done translating, `contact us <http://forums.novius-os.org/en/want-translate-novius,15.html>`__ and we'll grant you the rights to upload language files.
 
 Available languages
 ===================
