@@ -39,7 +39,7 @@ English language
 
 Novius OS is written in **British English**. So could you please be kind enough to restrain from using the spelling ‘Media Center’ instead of the more gentrified ‘Media Centre’?
 
-For quotation marks, we follow `the rule given by Oxford Dictionnaries <http://oxforddictionaries.com/us/words/quotation-marks-american>`__—single inverted commas e.g. ‘Hello world’. Besides please use apostrophes (’) not the prime symbol (').
+For quotation marks, we follow `the rule given by Oxford Dictionnaries <http://oxforddictionaries.com/us/words/quotation-marks-american>`__ —single inverted commas e.g. ‘Hello world’. Besides please use apostrophes (’) not the prime symbol (').
 
 Copy examples
 *************
