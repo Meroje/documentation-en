@@ -1,7 +1,7 @@
 Translate Novius OS
 ###################
 
-Novius OS is ready to be translated into any language (It has already been translated into French and Japanese). Here is the process to translate Novius OS into your language.
+Novius OS is ready to be translated into any language (It has already been translated into French, Japanese, Russian, Spanish and Interlingue). Here is the process to translate Novius OS into your language.
 
 Remember `we are here to help <http://forums.novius-os.org/en/want-translate-novius,15.html>`__. Your contribution is very appreciated, thank you.
 
