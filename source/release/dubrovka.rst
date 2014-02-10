@@ -43,15 +43,15 @@ Improvements
 * **Install**: Improving messages in the step one of the install wizard for facilitate understanding of the potential problems
 * **i18n**: Add plural mechanism and implement plural translation
 * **Renderer**: Selector for pages can now send multiple pages using checkboxes
-* **Renderer**: Add a generic Renderer::renderer() method for all renderers that extended Renderer
+* **Renderer**: Add a generic ``Renderer::renderer()`` method for all renderers that extended ``Renderer``
 * **WYSIWYG**: Refactoring TinyMCE Novius OS specific features. Explode all features in plugins, much more modular.
-* **404**: allow to use novius_ftplite app to add custom robots.txt (favicon or humans.txt)
+* **404**: allow to use ``novius_ftplite`` app to add custom ``robots.txt`` (``favicon`` or ``humans.txt``)
 * | **Behaviour**: All aliases in ``where`` and ``order_by`` options of ``find()`` work whatever the level where the alias is used and even in chaining methods.
   | Concern: ``context`` in ``Contextable``, ``published`` in ``Publishable``, ``default_sort`` in ``Sortable``, ``parent`` in ``Tree`` and ``context_main`` in ``Twinnable``.
 * **Migration**: Add an incremental ID and an execution date in migration table
 * **App manager**: Buttons are disabled after the click to prevent to recall the same action two times
 * **Blog/News**: Add a specific title for an author's posts list
-* **Blog/News**: Changing page_title and meta title for posts list of category, tag and author
+* **Blog/News**: Changing ``page_title`` and ``meta`` ``title`` for posts list of category, tag and author
 * **Comments**: The comment context can be passed by parameters in API
 
 Deprecated

@@ -13,7 +13,7 @@ If you installed Novius OS with :program:`Git`, run these commands from Novius O
 .. code-block:: bash
 
 	git fetch origin
-	git checkout master/chiba2
+	git checkout master/dubrovka
 	git submodule update --recursive --init
 
 .. note::
@@ -99,6 +99,6 @@ If you can't access :program:`SSH`, you can run the migration from back-office o
 Migrate your developments
 *************************
 
-If you have personnal developments, you need to follow the :doc:`/release/migrate_from_chiba.1_to_chiba.2`.
+If you have personnal developments, you need to follow the :doc:`/release/migrate_from_chiba.2_to_dubrovka`.
 
 

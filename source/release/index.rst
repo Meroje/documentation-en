@@ -9,5 +9,5 @@ Version notes
     migrate_from_0.2_to_chiba.1
     chiba.2
     migrate_from_chiba.1_to_chiba.2
-    d
-    migrate_from_chiba.2_to_d
+    dubrovka
+    migrate_from_chiba.2_to_dubrovka

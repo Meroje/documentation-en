@@ -178,7 +178,7 @@ Replace with:
 Config files extended by application extending mechanism
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Config files extended by application extending mechanism must be defined in a subdirectory apps/application_name/
+Config files extended by application extending mechanism must be defined in a subdirectory :file:`apps/application_name/`
 
 For sample, if your application A extends the sample.config.php file of the application B.
 

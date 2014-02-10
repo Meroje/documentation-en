@@ -6,7 +6,7 @@ Introducción
 
 Este manual de estilo está dirigido a aquellas personas que quieran escribir para Novius OS: desarrolladores y diseñadores de aplicaciones, colaboradores del núcleo y traductores. Su objetivo es establecer normas comunes a todas las aplicaciones y todos los idiomas para que **todos los usuarios de Novius OS tengan acceso a textos amenos y coherentes**.
 
-Se basa en los `«design personas»<http://aarronwalter.com/design-personas/>`__ de Aaron Walter. También ha servido de inspiración el manual de MailChimp `Voice and Tone <http://voiceandtone.com>`__, realizado por el equipo de Walter.
+Se basa en los `«design personas» <http://aarronwalter.com/design-personas/>`__ de Aaron Walter. También ha servido de inspiración el manual de MailChimp `Voice and Tone <http://voiceandtone.com>`__, realizado por el equipo de Walter.
 
 Acerca de la traducción
 =======================

@@ -44,7 +44,7 @@ On GitHub, download the application as a **.zip** file:
 Unzip the downloaded archive in the :file:`/local/applications/` directory.
 
 Rename the created directory in order to delete the branch name (which is automatically added by GitHub).
-For example, you will rename :file:`novius_ftplite-master-chiba` into :file:`novius_ftplite` only.
+For example, you will rename :file:`novius_ftplite-master-dubrovka` into :file:`novius_ftplite` only.
 
 
 Lastly, don't forget to :ref:`activate the application <manage/install_app/activate>` in the applications manager.
@@ -82,7 +82,7 @@ Go into the directory containing your application, and update the repository in 
 
     cd local/applications/novius_ftplite
     git fetch
-    git checkout master/chiba2
+    git checkout master/dubrovka
 
 Then, go in the applications manager to :guilabel:`« Apply changes »`.
 

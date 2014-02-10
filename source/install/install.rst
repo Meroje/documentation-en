@@ -53,7 +53,7 @@ Open a terminal and enter:
 .. code-block:: bash
 
     cd /var/www
-    sudo wget http://raw.github.com/novius-os/ci/master/chiba2/tools/install.sh && sh install.sh
+    sudo wget http://raw.github.com/novius-os/ci/master/dubrovka/tools/install.sh && sh install.sh
 
 Once the installation completes:
 
@@ -70,7 +70,7 @@ Installation via Zip file
 
 We recommend you follow this procedure when installing Novius OS on shared hosting:
 
-* Download  `novius-os.chiba.2.4.zip <http://community.novius-os.org/download-novius-os-zip.html>`__.
+* Download  `novius-os.dubrovka.zip <http://community.novius-os.org/download-novius-os-zip.html>`__.
 * Unzip the file.
 * Upload (or move) the :file:`novius-os` directory to your server's ``DOCUMENT_ROOT`` (using FTP for instance).
 * Open your browser at http://your.domain/novius-os/ (replace ``novius-os`` with the directory name where Novius OS has been unzipped).
