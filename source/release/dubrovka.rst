@@ -54,6 +54,24 @@ Improvements
 * **Blog/News**: Changing ``page_title`` and ``meta`` ``title`` for posts list of category, tag and author
 * **Comments**: The comment context can be passed by parameters in API
 
+.. versionadded:: 4.1
+
+* **Front Controller**:
+    * New methods ``setItemDisplayed()`` and ``getItemDisplayed()``.
+    * ``setItemDisplayed()`` set automatically ``title``, ``h1``, ``meta_description`` and ``meta_keywords``.
+    * ``setItemDisplayed()`` triggers the event ``front.setItemDisplayed``.
+    * New ``setH1()`` method.
+    * ``setTitle()``, ``setH1()``, ``setMetaDescription()``, ``setMetaKeywords()`` methods take a template by second parameter (the default template can be set by config). The page's property is available in the template with a placeholder.
+    * The method ``addJavascriptInline()`` detects the use of tag ``<script>``.
+* **Appdesk**:
+    * The search bar layout is improved
+    * New possible config key ``multiContextHide`` for inspectors
+    * Performance improved with a javascript refactoring: use of ``wijsplitter`` only if need.
+    * Improving the resize process.
+* **Relation Twinnable_ManyMany**: Improving of the ``join()`` method. Adding the ``main_context`` condition.
+* **Behaviour Twinnable**: Improving performance of save operation by avoiding to save twins if not needed.
+* **Behaviour sortable**: Add config key ``sort_twins``, default to true.
+
 Deprecated
 ----------
 
