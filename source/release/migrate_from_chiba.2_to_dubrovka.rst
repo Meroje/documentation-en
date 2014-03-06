@@ -186,3 +186,13 @@ Deprecated location: :file:`local/applications/application_a/config/sample.confi
 
 Move to: :file:`local/applications/application_a/config/apps/application_b/sample.config.php`
 
+
+.. _release/migrate_from_chiba.2_to_d/wysiwyg_theme:
+
+WYSIWYG theme
+^^^^^^^^^^^^^
+
+The use of ``advanced`` theme is deprecated, use only theme ``nos``.
+
+Theme ``nos`` is now an extension of ``advanced`` theme.
+All configuration keys starting with ``theme_nos_`` are deprecated and should be replaced by their equivalent starting ``theme_advanced_``.

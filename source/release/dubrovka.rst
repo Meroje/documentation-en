@@ -85,3 +85,4 @@ Deprecated
 * :ref:`release/migrate_from_chiba.2_to_d/applicationRequiredFromMetadata`
 * :ref:`release/migrate_from_chiba.2_to_d/extends.application`
 * :ref:`release/migrate_from_chiba.2_to_d/extends.apps`
+* :ref:`release/migrate_from_chiba.2_to_d/wysiwyg_theme`
