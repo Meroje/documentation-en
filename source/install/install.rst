@@ -87,10 +87,10 @@ The following commands are provided as example when installing Novius OS on Ubun
 
 .. code-block:: bash
 
-	sudo nano /etc/apache2/sites-available/novius-os
+	sudo nano /etc/apache2/sites-available/novius-os.conf
 
 | Replace :command:`nano` with any text editor.
-| Replace :file:`novius-os` with the name you want for your ``Virtual Host``.
+| Replace :file:`novius-os.conf` with the name you want for your ``Virtual Host``.
 
 | Copy the following configuration in the file you just opened and save.
 | Change the line ``ServerName`` with your domain name when installing on a live server.
@@ -113,7 +113,7 @@ Enable the new ``VirtualHost``:
 
 .. code-block:: bash
 
-	sudo a2ensite novius-os
+	sudo a2ensite novius-os.conf
 
 Then, reload :program:`Apache` to apply the new configuration.
 
