@@ -263,7 +263,7 @@ if on_rtd:
 	todo_include_todos = False
 else:
 	intersphinx_mapping = {
-	'api': ('http://novius-os-docs-api/', None),
+	'api': ('http://novius-os-docs-api:8082/', None),
 	'en': ('http://docs.novius-os.org/en/dubrovka/', None),
 	'fr': ('http://docs-fr.novius-os.org/en/dubrovka/', None),
 	'ja': ('http://docs-ja.novius-os.org/en/0.2/', None),
