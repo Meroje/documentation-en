@@ -5,6 +5,7 @@ Discover Novius OS
 
 	fundamentals_software
 	organization_directories
+	version-numbers
 	differences_fuelphp
 	ergonomy
 	applications
