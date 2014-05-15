@@ -17,9 +17,9 @@ Developer
 Breaking changes
 ----------------
 
-* :ref:`release/migrate_from_chiba.2_to_d/fuelphp`
-* :ref:`release/migrate_from_chiba.2_to_d/wijmo`
-* :ref:`release/migrate_from_chiba.2_to_d/migrations.enabled_types.metadata`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/fuelphp`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/wijmo`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/migrations.enabled_types.metadata`
 
 Vendors update
 --------------
@@ -79,10 +79,10 @@ Improvements
 Deprecated
 ----------
 
-* :ref:`release/migrate_from_chiba.2_to_d/i18n_crud_config`
-* :ref:`release/migrate_from_chiba.2_to_d/hmvc`
-* :ref:`release/migrate_from_chiba.2_to_d/loadConfiguration`
-* :ref:`release/migrate_from_chiba.2_to_d/applicationRequiredFromMetadata`
-* :ref:`release/migrate_from_chiba.2_to_d/extends.application`
-* :ref:`release/migrate_from_chiba.2_to_d/extends.apps`
-* :ref:`release/migrate_from_chiba.2_to_d/wysiwyg_theme`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/i18n_crud_config`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/hmvc`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/loadConfiguration`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/applicationRequiredFromMetadata`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/extends.application`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/extends.apps`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/wysiwyg_theme`
