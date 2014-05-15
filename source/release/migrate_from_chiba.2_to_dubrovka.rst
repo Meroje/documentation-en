@@ -1,5 +1,5 @@
-Migration guide from the Chiba 2 version to the D version
-###############################################################
+Migration guide from the Chiba 2 version to the Dubrovka version
+################################################################
 
 Upgrade your Novius OS and its applications
 *******************************************
@@ -12,7 +12,7 @@ Migrate your developments
 Breaking changes
 ----------------
 
-.. _release/migrate_from_chiba.2_to_d/fuelphp:
+.. _release/migrate_from_chiba.2_to_dubrovka/fuelphp:
 
 FuelPHP from 1.6 to 1.7.1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -23,14 +23,14 @@ Take a look of these three changelog of FuelPHP for backward compatibility notes
 * `FuelPHP 1.7 <https://github.com/fuel/fuel/blob/1c4e81b3941c833a8dcf0e6565d4bbe68dc65f03/CHANGELOG.md>`__
 * `FuelPHP 1.7.1 <https://github.com/fuel/fuel/blob/8bdfa36e2173ed2afeb28455760cf4bfe68f96ff/CHANGELOG.md>`__
 
-.. _release/migrate_from_chiba.2_to_d/wijmo:
+.. _release/migrate_from_chiba.2_to_dubrovka/wijmo:
 
 Wijmo from 2013v1.4 to 2013v3.20
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Take a look of release notes of Wijmo between 2013v3.20 and 2013v1.4: http://wijmo.com/wiki/index.php/Version_Histories
 
-.. _release/migrate_from_chiba.2_to_d/migrations.enabled_types.metadata:
+.. _release/migrate_from_chiba.2_to_dubrovka/migrations.enabled_types.metadata:
 
 End of support for config key migrations.enabled_types.metadata
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -47,7 +47,7 @@ Deprecated
 
 Those updates are not mandatory but desirable to be able to migrate without trouble when next version is released.
 
-.. _release/migrate_from_chiba.2_to_d/i18n_crud_config:
+.. _release/migrate_from_chiba.2_to_dubrovka/i18n_crud_config:
 
 Some i18n keys of CRUD config for plural forms
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -71,7 +71,7 @@ These keys are unnecessary:
 * ``1 item``
 
 
-.. _release/migrate_from_chiba.2_to_d/hmvc:
+.. _release/migrate_from_chiba.2_to_dubrovka/hmvc:
 
 Nos::hmvc() API is simplified
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -94,7 +94,7 @@ Replace with:
 
     \Nos::hmvc('request/url/', array($first_parameter, $second_parameter));
 
-.. _release/migrate_from_chiba.2_to_d/loadConfiguration:
+.. _release/migrate_from_chiba.2_to_dubrovka/loadConfiguration:
 
 Method \Config::loadConfiguration()
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -119,7 +119,7 @@ Replace with:
 
     $config = \Config::load('application_name::file_name', true);
 
-.. _release/migrate_from_chiba.2_to_d/applicationRequiredFromMetadata:
+.. _release/migrate_from_chiba.2_to_dubrovka/applicationRequiredFromMetadata:
 
 \Nos\Application::applicationRequiredFromMetadata() scope public
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -135,7 +135,7 @@ You can get all applications dependencies by loading the :file:`app_dependencies
 
     $dependencies = \Nos\Config_Data::get('app_dependencies', array());
 
-.. _release/migrate_from_chiba.2_to_d/extends.application:
+.. _release/migrate_from_chiba.2_to_dubrovka/extends.application:
 
 In metadata files, ``extends.application`` key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -173,7 +173,7 @@ Replace with:
         ),
     );
 
-.. _release/migrate_from_chiba.2_to_d/extends.apps:
+.. _release/migrate_from_chiba.2_to_dubrovka/extends.apps:
 
 Config files extended by application extending mechanism
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -187,7 +187,7 @@ Deprecated location: :file:`local/applications/application_a/config/sample.confi
 Move to: :file:`local/applications/application_a/config/apps/application_b/sample.config.php`
 
 
-.. _release/migrate_from_chiba.2_to_d/wysiwyg_theme:
+.. _release/migrate_from_chiba.2_to_dubrovka/wysiwyg_theme:
 
 WYSIWYG theme
 ^^^^^^^^^^^^^
