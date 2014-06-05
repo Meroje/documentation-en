@@ -20,6 +20,7 @@ Breaking changes
 * :ref:`release/migrate_from_chiba.2_to_dubrovka/fuelphp`
 * :ref:`release/migrate_from_chiba.2_to_dubrovka/wijmo`
 * :ref:`release/migrate_from_chiba.2_to_dubrovka/migrations.enabled_types.metadata`
+* :ref:`release/migrate_from_chiba.2_to_dubrovka/event.metadata`
 
 Vendors update
 --------------

@@ -42,6 +42,33 @@ During migration, all files in :file:`local/metadata` are supposed be writable.
 A new event :ref:`migrate.exception <api:php/events/migrate.exception>` is triggered if a migration throws an exception.
 This event can stop exception propagation.
 
+.. _release/migrate_from_chiba.2_to_dubrovka/event.metadata:
+
+Event name for extend metadata configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This code do nothing in Dubrovka:
+
+.. code-block:: php
+
+    <?php
+
+    \Event::register_function('config|an_application::metadata', function (&$config) {
+        //...
+    });
+
+You must do that:
+
+.. code-block:: php
+
+    <?php
+
+    \Event::register_function('config|!an_application::metadata', function (&$config) {
+        //...
+    });
+
+Add a leading ``!`` on the metadata path.
+
 Deprecated
 ----------
 
