@@ -21,6 +21,7 @@ Developer
 * **ORM**: Wysiwygs and Medias becomes native providers.
 * **ORM**: New ``shared_wysiwygs_context`` and ``shared_medias_context`` providers.
 * **Enhancer**: Config popup now run form validation if some fields have contraints.
+* **Grid**: ``cellFormatters`` on columns work on all ``noslistgrid`` widget, not only on principal grid of appdesk
 
 Breaking changes
 ----------------
