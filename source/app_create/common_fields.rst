@@ -33,29 +33,5 @@ Example
 Common media and WYSIWYG
 ************************
 
-For define a common media or WYSIWYG, just add it to the right variable of the model.
+For define a common media or WYSIWYG, use :ref:`providers <api:php/behaviours/twinnable/providers>` ``shared_wysiwygs_context`` and ``shared_medias_context`` added by the ``Twinnable`` behaviour.
 
-:shared_medias_context: Common medias array.
-:shared_wysiwygs_context: Common WYSIWYGs array.
-
-Common medias and WYSIWYGs can be use like classic medias and WYSIWYGs, with accessors ``medias`` and ``wysiwygs`` of the model.
-
-.. seealso:: :ref:`Accessors of Model <api:php/models/model/accessors>`.
-
-Example
-*******
-
-.. code-block:: php
-
-    <?php
-    class Model_Monkey extends \Nos\Orm\Model
-    {
-        // ...
-
-        public static $shared_medias_context = array(
-            'thumbnail',
-        );
-
-        public static $shared_wysiwygs_context = array(
-        );
-    }
