@@ -1,4 +1,4 @@
-Release notes E
+Release notes Elche
 ######################
 
 New features

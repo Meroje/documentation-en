@@ -1,4 +1,4 @@
-Migration guide from the Dubrovka version to the E version
+Migration guide from the Dubrovka version to the Elche version
 ###############################################################
 
 Upgrade your Novius OS and its applications
