@@ -6,8 +6,12 @@ Create a template
 
 Template metadata are described in :ref:`the API documentation <api:metadata/templates>`.
 
+2. Template variation configuration
+===================================
 
-2. View file creation
+You can optionnaly define a :ref:`template variation configuration <api:php/configuration/template_variation>` if your template is customisable by context.
+
+3. View file creation
 =====================
 
 File location depends on the ``file`` key configured in the :file:`metadata.config.php` file.
@@ -17,6 +21,7 @@ Inside the template, some variable can be accessed:
 :$wysiwyg: A hash which keys are the WYSIWYG name configured in the :file:`metadata.config.php` file and values are
   		   content the user entered.
 :$page: ``Nos\model_Page`` instance.
+:$title: The title to put in a ``h1`` tag
 :$main_controller: :ref:`Front controller instance <api:php/classes/controller_front>`.
 
 .. code-block:: html
