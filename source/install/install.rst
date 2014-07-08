@@ -70,7 +70,7 @@ Installation via Zip file
 
 We recommend you follow this procedure when installing Novius OS on shared hosting:
 
-* Download  `novius-os.4.2-dubrovka.zip <http://community.novius-os.org/download-novius-os-zip.html>`__.
+* Download  `novius-os.4.3-dubrovka.zip <http://nova.li/nov4-3>`__.
 * Unzip the file.
 * Upload (or move) the :file:`novius-os` directory to your server's ``DOCUMENT_ROOT`` (using FTP for instance).
 * Open your browser at http://your.domain/novius-os/ (replace ``novius-os`` with the directory name where Novius OS has been unzipped).
