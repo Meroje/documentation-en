@@ -85,18 +85,29 @@ Once ``application_2`` is installed, it will be loaded at the same time than ``m
 
 When an application extends another one, some automatic behaviours falls into place.
 
+.. seealso:: :ref:`Metadata extends API<api:php/configuration/metadata/extends>`.
+
 **Example:**
 
 ``application_2`` extends ``my_application``.
 
-Configuration files of ``Controller`` and ``Model`` inside ``my_application`` can automatically be extended by ``application_2`` just by creating them at the same location.
+Configuration
+=============
+
+Configuration files of ``Controller`` and ``Model`` inside ``my_application`` can automatically be extended by ``application_2``.
 
 For instance, ``my_application`` has the following configuration file for ``Controller_Test``: :file:`applications/mon_application/config/controller/test.config.php`.
 
-In ``application_2``, if the matching file :file:`applications/application_2/config/controller/test.config.php` exists, then it will be merged.
+In ``application_2``, if the matching file :file:`applications/application_2/config/apps/mon_application/controller/test.config.php` exists, then it will be merged.
 
 i.e. in ``My\Application\Controller_Test``, the ``$config`` variable will contain the merge of the 2 files (the one of
 the extended ``my_application`` application, and also the one from ``application_2`` which extends the first one).
 
-.. seealso:: :ref:`Metadata extends API<api:php/configuration/metadata/extends>`.
+Views
+=====
 
+Views of ``my_application`` can be replaced by ``application_2``.
+
+For instance, ``my_application`` have a view :file:`views/admin/help.view.php`
+
+If in ``application_2``, if the matching file :file:`applications/application_2/views/apps/mon_application/admin/help.view.php` exists, it will be used in place of that of ``my_application``.
