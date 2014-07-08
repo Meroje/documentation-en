@@ -255,17 +255,17 @@ texinfo_documents = [
 
 if on_rtd:
 	intersphinx_mapping = {
-	'api': ('http://docs-api.novius-os.org/en/dubrovka/', None),
-	'en': ('http://docs.novius-os.org/en/dubrovka/', None),
-	'fr': ('http://docs-fr.novius-os.org/en/dubrovka/', None),
+	'api': ('http://docs-api.novius-os.org/en/elche/', None),
+	'en': ('http://docs.novius-os.org/en/elche/', None),
+	'fr': ('http://docs-fr.novius-os.org/fr/elche/', None),
 	'ja': ('http://docs-ja.novius-os.org/en/0.2/', None),
 	  }
 	todo_include_todos = False
 else:
 	intersphinx_mapping = {
 	'api': ('http://novius-os-docs-api:8082/', None),
-	'en': ('http://docs.novius-os.org/en/dubrovka/', None),
-	'fr': ('http://docs-fr.novius-os.org/en/dubrovka/', None),
+	'en': ('http://docs.novius-os.org/en/elche/', None),
+	'fr': ('http://docs-fr.novius-os.org/fr/elche/', None),
 	'ja': ('http://docs-ja.novius-os.org/en/0.2/', None),
 	  }
 	todo_include_todos = True
