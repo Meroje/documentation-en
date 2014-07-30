@@ -46,3 +46,11 @@ Deprecated
 ----------
 
 * :ref:`release/migrate_from_dubrovka_to_elche/nos_methods`
+
+.. versionadded:: 5.0.1
+
+New features
+============
+
+* Japanese translation.
+* **ORM**: Twinnable relations now allow to fix a context instead of using the one on the current model. This allow to use the front office context insted of the model context (wich can be different).
